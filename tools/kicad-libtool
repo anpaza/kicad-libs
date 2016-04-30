@@ -1,0 +1,155 @@
+#!/usr/bin/python
+#
+# This simple script will allow you to manage to some extent your KiCad libraries.
+# You can always add in more functionality, as the interface is pretty clean.
+#
+# Before writing any file the tool will check if the destination file exists, and
+# backup it with a '~' appended to file name first.
+#
+# The following functions are implemented right now:
+#
+# --list
+#       With this option, the tool will display a list of components inside
+#       the libraries given on command line.
+#
+# --reindex
+#       With this option, the tool will rebuild the library index which can
+#       be sometimes damaged due to manual editing. This will overwrite the
+#       library in place, so please backup before you reindex.
+#       Basically, this will load and then save the library in place.
+#
+# --split=FN
+#       This option will proceed the libraries on command line according to the
+#       instructions given in the file FN. The format of the file is same as in
+#       the --list output. The program will search for the components listed
+#       after the library name in all libraries mentioned in the command line,
+#       and write them into the respective library. The libraries mentioned in
+#       the FN file will be overwritten, so be careful.
+#       The order of libraries on the command line is significant: if a component
+#       with same name exists in several libraries, the one that is in the earliest
+#       library will be picked.
+#
+#       MAKE SURE ALL USED LIBRARIES USE THE SAME FORMAT,
+#       E.G. CHECK FOR "Units mm" AT THE TOP OF EVERY PCBNEW LIBRARY FILE!
+#
+
+import kicad
+import optparse
+import os.path
+import sys
+
+version = "0.1.0"
+
+
+def NewLibrary (fn):
+    """
+    Create a new library object, choosing library type by filename extension.
+    """
+    ext = os.path.splitext (fn) [1].lower ()
+    if (ext == ".mod") or (ext == ".emp"):
+        return kicad.PCBNewLibrary ()
+    elif (ext == ".lib"):
+        return kicad.EESchemaLibrary ()
+
+    sys.stderr.write ("ERROR: cannot determine library type from its extension:\n	%s\n" % fn)
+
+
+def SplitLibraries (sfn, ilibs, units):
+    f = open (sfn, "r")
+
+    lib = None
+    newlibs = []
+    for l in f.readlines ():
+        sl = l.rstrip ()
+        if (sl == "") or (sl [0] == '#'):
+            continue
+
+        if sl [0] == ':':
+            x = sl.split (':')
+            if len (x) == 3:
+                # seems to be a new output library definition
+                if x [1] == "PCBNew":
+                    lib = kicad.PCBNewLibrary ()
+                elif x [1] == "EESchema":
+                    lib = kicad.EESchemaLibrary ()
+                lib.name = x [2]
+                if hasattr (lib, "units"):
+                    lib.units = units;
+                newlibs.append (lib)
+                continue
+
+        if lib is None:
+            sys.stderr.write ("Unexpected split script input line:\n	%s\n" % sl)
+            continue
+
+        if lib.HasComponent (sl):
+            sys.stderr.write ("Component %s already added to library %s\n" % (sl, lib.name))
+        else:
+            found = False
+            for ilib in ilibs:
+                if ilib.HasComponent (sl):
+                    lib.CopyComponent (sl, ilib)
+                    found = True
+                    break
+
+            if not found:
+                sys.stderr.write ("Component %s not found in any of the specified libs\n" % sl)
+
+    f.close ()
+
+    for x in newlibs:
+        print "Saving library %s" % x.name
+        x.Save (os.path.join (x.path, x.name))
+
+
+op = optparse.OptionParser (
+    usage="Usage: %prog [options] [<library_file1>...]",
+    version="%%prog %s" % version)
+
+op.add_option("-l", "--list", dest="list", default=False,
+    help="List all components in the library", action="store_true")
+op.add_option("-r", "--reindex", dest="reindex", default=False,
+    help="Reindex the library", action="store_true")
+op.add_option("-s", "--split", dest="split", default=None,
+    help="Split libraries according to directives in FN", metavar="FN")
+
+(options, args) = op.parse_args ()
+
+if len (args) == 0:
+    op.print_help ()
+    raise SystemExit
+
+libs = []
+units = None
+for x in args:
+    lib = NewLibrary (x)
+    lib.Load (x)
+    libs.append (lib)
+    if hasattr (lib, "units"):
+        if lib.units != units:
+            if not (units is None):
+                sys.stderr.write ("All libraries must use same units!\n" + \
+                    "%s is using %s while earlier libs use %s!\n" % \
+                    (lib.name, lib.units, units))
+                raise SystemExit
+            units = lib.units
+
+
+if options.list:
+    for lib in libs:
+        print ":%s:%s" % (lib.type, lib.name)
+
+        k = lib.components.keys ()
+        k.sort ()
+
+        for cn in k:
+            print cn
+
+
+if options.reindex:
+    for lib in libs:
+        lib.Save (os.path.join (lib.path, lib.name))
+
+
+if not (options.split is None):
+    SplitLibraries (options.split, libs, units)
