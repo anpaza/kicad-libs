@@ -45,3 +45,25 @@ While exporting, you may use the following options:
       a single .blend file, make all secondary objects childs of the primary
       mesh, then you may select whole hierarchy by Ctrl+clicking on parent
       object name in scene tree viewer.
+
+Some general guidelines:
+
+    * Use only simple materials. Not that the addon cares, but you won't get
+      procedural texturing in KiCad anyways :) The addon will export the following
+      material settings: Diffuse color, Emissive color, Specular color, Ambient
+      intensity, Specular intensity.
+
+    * Use the scale "1 blender unit" = 1mm. This is the default in the export
+      plugin, which sets a default scale of 1/2.54 = 0.3937
+      (KiCad, or rather Wings3D, use "1 Wings3D unit" = 0.1 inch).
+
+      Of course, you may work in Wings3D units directly, in which case you
+      will want to set the scale to 1.0.
+
+    * I recommend to create parent-child hierarchies when using a single .blend
+      file to store multiple models. Make the biggest mesh (usually the part body)
+      to be the parent of every other mesh, then you can easily select the whole
+      hierarchy (Ctrl+click on the parent in the Scene tree window) and export
+      with the "Origin to Center" option enabled, which will move the parent's
+      origin to (0,0,0) and the children will stay wherever they must be,
+      relative to parent.
