@@ -40,15 +40,15 @@ def save_bmesh(fw, bm, materials):
         if m is None:
             continue
 
-        fw("\t\t\tdiffuseColor %.2f %.2f %.2f\n" % m.diffuse_color[:])
+        fw("\t\t\tdiffuseColor %.3g %.3g %.3g\n" % m.diffuse_color[:])
         emissive_color = list (m.diffuse_color[:])
         for x in range (len (emissive_color)):
             emissive_color [x] *= m.emit
-        fw("\t\t\temissiveColor %.2f %.2f %.2f\n" % tuple (emissive_color))
-        fw("\t\t\tspecularColor %.2f %.2f %.2f\n" % m.specular_color[:])
-        fw("\t\t\tambientIntensity %.6f\n" % m.ambient)
+        fw("\t\t\temissiveColor %.3g %.3g %.3g\n" % tuple (emissive_color))
+        fw("\t\t\tspecularColor %.3g %.3g %.3g\n" % m.specular_color[:])
+        fw("\t\t\tambientIntensity %.3g\n" % m.ambient)
         fw("\t\t\ttransparency 0.000000\n")
-        fw("\t\t\tshininess %.6f\n" % m.specular_intensity)
+        fw("\t\t\tshininess %.3g\n" % m.specular_intensity)
         break
 
     fw('\t\t}\n')  # end 'Material'
@@ -60,7 +60,14 @@ def save_bmesh(fw, bm, materials):
     vn = len (bm.verts)
     for v in bm.verts:
         vn -= 1
-        fw("\n\t\t\t%.6f %.6f %.6f%s" % (v.co[0], v.co [1], v.co [2], \
+        # Snap rounding errors to zero
+        if abs (v.co [0]) < 0.00001:
+            v.co [0] = 0
+        if abs (v.co [1]) < 0.00001:
+            v.co [1] = 0
+        if abs (v.co [2]) < 0.00001:
+            v.co [2] = 0
+        fw("\n\t\t\t%.6g %.6g %.6g%s" % (v.co[0], v.co [1], v.co [2], \
             "," if vn > 0 else ""))
     del v
     fw(' ]\n')  # end 'point[]'

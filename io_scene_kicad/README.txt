@@ -22,11 +22,11 @@ Andrey Zabolotnyi <zapparello@ya.ru>
 How to use
 ----------
 
-Place the "io_scene_kicad" directory into your ~/.blender/scripts/addons/
-directory (or whatever equivalent on your OS). If there's no scripts/addons
-directory, create one. Then launch Blender, open User Settings dialog
-(Ctrl+Alt+U), select the Addons tab, select the Import-Export category
-and enable the addon KiCadVRML2.
+Place the "io_scene_kicad" directory (not the contents of it!) into your
+~/.blender/scripts/addons/ directory (or whatever equivalent on your OS).
+If there's no scripts/addons directory, create one. Then launch Blender,
+open User Settings dialog (Ctrl+Alt+U), select the Addons tab, select
+the Import-Export category and enable the addon KiCadVRML2.
 
 Now in File -> Export you must see the "KiCadVRML2" option.
 
@@ -52,6 +52,10 @@ Some general guidelines:
       procedural texturing in KiCad anyways :) The addon will export the following
       material settings: Diffuse color, Emissive color, Specular color, Ambient
       intensity, Specular intensity.
+
+    * Adjust your material colors to look good in KiCad, not Blender :). For some
+      reason, the colors are quite different when viewing in Blender and with
+      a VRML2 viewer or KiCad.
 
     * Use the scale "1 blender unit" = 1mm. This is the default in the export
       plugin, which sets a default scale of 1/2.54 = 0.3937
