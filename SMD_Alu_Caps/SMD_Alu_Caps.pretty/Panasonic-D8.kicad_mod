@@ -1,7 +1,7 @@
-(module Panasonic-D (layer F.Cu)
+(module Panasonic-D8 (layer F.Cu)
   (tags "Panasonic Aluminum Electrolytic Capacitors Surface Mount Type")
   (attr smd)
-  (fp_text reference Panasonic-D (at 0 -4.3) (layer F.SilkS)
+  (fp_text reference Panasonic-D8 (at 0 -4.3) (layer F.SilkS)
     (effects (font (size 0.862 0.862) (thickness 0.127)))
   )
   (fp_text value VAL** (at 0 4.4) (layer F.SilkS) hide
@@ -17,7 +17,7 @@
   (fp_line (start -3.55 3.55) (end -3.55 -3.55) (layer F.SilkS) (width 0.15))
   (pad 1 smd rect (at 2.5 0) (size 3.2 1.6) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -2.5 0) (size 3.2 1.6) (layers F.Cu F.Paste F.Mask))
-  (model SMD_Alu_Caps.3dshapes/Panasonic-D.wrl
+  (model SMD_Alu_Caps.3dshapes/Panasonic-D8.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
