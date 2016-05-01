@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name SMD_Alu_Caps)(type KiCad)(uri ${KIPRJMOD}/SMD_Alu_Caps.pretty)(options "")(descr ""))
+)
