@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name JST_Conn)(type KiCad)(uri ${KIPRJMOD}/JST_Conn.pretty)(options "")(descr ""))
-)

@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name SMD_Inductors)(type KiCad)(uri ${KIPRJMOD}/SMD_Inductors.pretty)(options "")(descr ""))
-)
