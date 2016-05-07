@@ -39,7 +39,7 @@ def save_bmesh(fw, bm, materials):
     for m in materials:
         if m is None:
             continue
-
+        fw('\t\t\t# Material %r\n' % materialid(m.name))
         fw("\t\t\tdiffuseColor %.3g %.3g %.3g\n" % m.diffuse_color[:])
         emissive_color = list (m.diffuse_color[:])
         for x in range (len (emissive_color)):
@@ -47,7 +47,7 @@ def save_bmesh(fw, bm, materials):
         fw("\t\t\temissiveColor %.3g %.3g %.3g\n" % tuple (emissive_color))
         fw("\t\t\tspecularColor %.3g %.3g %.3g\n" % m.specular_color[:])
         fw("\t\t\tambientIntensity %.3g\n" % m.ambient)
-        fw("\t\t\ttransparency 0.000000\n")
+        fw("\t\t\ttransparency %.3g\n" % (1-m.alpha))
         fw("\t\t\tshininess %.3g\n" % m.specular_intensity)
         break
 
@@ -125,8 +125,12 @@ def save_object(fw, global_matrix,
 
 def vrmlid(n):
     """ Transform a object ID into something VRML can swallow"""
-    return '_' + n.replace ('.', '_')
+    return '_' + n.replace ('.', '_').replace (' ','_')
 
+def materialid(n):
+    """ Transform a material name for VRML compatibility, but no leading '_', we might reimport wrl and keep material names."""
+    return n.replace ('.', '_').replace (' ','-')
+    
 def save(operator,
          context,
          filepath="",

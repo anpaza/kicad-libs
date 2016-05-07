@@ -53,6 +53,10 @@ Some general guidelines:
       material settings: Diffuse color, Emissive color, Specular color, Ambient
       intensity, Specular intensity.
 
+    * Use one-material-per-submesh. The export plugin will export only one
+      material for every exported mesh (the first in list). No per-vertex
+      colors are supported, they just blow the output file.
+
     * Adjust your material colors to look good in KiCad, not Blender :). For some
       reason, the colors are quite different when viewing in Blender and with
       a VRML2 viewer or KiCad.
