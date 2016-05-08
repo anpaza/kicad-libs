@@ -151,7 +151,7 @@ def save(operator,
         top = None
         toploc = None
         for obj in objects:
-            if obj.type != 'MESH':
+            if (obj.type != 'MESH') or obj.hide:
                 continue
 
             cur = obj
@@ -185,12 +185,14 @@ and are part of different hierarchies.
     fw('#modeled using blender3d http://blender.org\n')
 
     for obj in objects:
-        if obj.type == 'MESH':
-            fw("\n# %r\nDEF %s Transform {\nchildren [\n" % (obj.name, vrmlid (obj.name)))
-            save_object(fw, global_matrix,
-                        scene, obj,
-                        use_mesh_modifiers)
-            fw("]\n}\n")
+        if (obj.type != 'MESH') or obj.hide:
+            continue
+
+        fw("\n# %r\nDEF %s Transform {\nchildren [\n" % (obj.name, vrmlid (obj.name)))
+        save_object(fw, global_matrix,
+                    scene, obj,
+                    use_mesh_modifiers)
+        fw("]\n}\n")
 
     file.close()
 
