@@ -2,5 +2,7 @@
 *~
 *.blend
 *.blend1
+*.wings
+*.3ds
 zap
 Capacitors_gen.kicad_pcb
