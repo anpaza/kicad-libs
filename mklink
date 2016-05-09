@@ -15,7 +15,7 @@ function mksl() {
 		ln -fs "$2" "$1" || exit $?
 	elif [ -f "$1" ] ; then
 		echo "  CONFLICT WARNING! Regular file exist: $1"
-		ln -fs "$2" "$1" || exit $?
+		#ln -fs "$2" "$1" || exit $?
 	else
 		echo "  Creating link $1"
 		ln -s "$2" "$1" || exit $?
