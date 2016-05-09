@@ -1,4 +1,4 @@
-(module 0805 (layer F.Cu) (tedit 5730E3D4)
+(module 0805 (layer F.Cu) (tedit 5730EBD3)
   (descr "Capacitor SMD 0805, Reflow soldering")
   (tags "capacitor 0805 reflow")
   (attr smd)

@@ -1,4 +1,4 @@
-(module EIA-7360-38 (layer F.Cu) (tedit 5730E3D4)
+(module EIA-7360-38 (layer F.Cu) (tedit 5730EBD3)
   (descr "Capacitor SMD EIA-7360-38, Size Kemet-E, Hand soldering")
   (tags "capacitor EIA-7360-38 2623 Kemet-E hand")
   (attr smd)

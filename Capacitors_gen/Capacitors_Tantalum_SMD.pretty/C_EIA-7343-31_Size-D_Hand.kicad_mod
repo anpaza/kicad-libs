@@ -1,4 +1,4 @@
-(module EIA-7343-31 (layer F.Cu) (tedit 5730E3D4)
+(module EIA-7343-31 (layer F.Cu) (tedit 5730EBD3)
   (descr "Capacitor SMD EIA-7343-31, Size D, Hand soldering")
   (tags "capacitor EIA-7343-31 2917 D hand")
   (attr smd)
