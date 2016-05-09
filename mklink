@@ -1,0 +1,35 @@
+#!/bin/sh
+# Auxiliary script to create links
+
+# requires 3 parameters to run
+[ -z "$3" ] && exit 1
+
+function mksl() {
+	if [ -L "$1" ] ; then
+		# Check if destination exists and it is a link
+		tmp=`readlink "$1" 2>/dev/null`
+		# Correct link already exist?
+		[ "$tmp" = "$2" ] && return
+
+		echo "  Fixing link $1"
+		ln -fs "$2" "$1" || exit $?
+	elif [ -f "$1" ] ; then
+		echo "  CONFLICT WARNING! Regular file exist: $1"
+		ln -fs "$2" "$1" || exit $?
+	else
+		echo "  Creating link $1"
+		ln -s "$2" "$1" || exit $?
+	fi
+}
+
+if [ -d "$1" ] ; then
+	echo "$1 is a dir! Making individual links"
+	for x in $2/*.$3 ; do
+		# Ignore anything but files
+		test -f "$x" || continue
+
+		mksl "$1/`basename "$x"`" "$x"
+	done
+else
+	mksl "$1" "$2"
+fi
