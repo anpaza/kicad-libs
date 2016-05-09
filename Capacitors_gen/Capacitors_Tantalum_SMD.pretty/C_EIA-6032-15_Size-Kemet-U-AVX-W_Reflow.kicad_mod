@@ -1,4 +1,4 @@
-(module EIA-6032-15 (layer F.Cu) (tedit 5730EBD3)
+(module EIA-6032-15 (layer F.Cu)
   (descr "Capacitor SMD EIA-6032-15, Size Kemet-U AVX-W, Reflow soldering")
   (tags "capacitor EIA-6032-15 2312 Kemet-U AVX-W reflow")
   (attr smd)

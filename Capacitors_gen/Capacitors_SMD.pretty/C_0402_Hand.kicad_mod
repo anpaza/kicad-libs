@@ -1,4 +1,4 @@
-(module 0402 (layer F.Cu) (tedit 5730EBD3)
+(module 0402 (layer F.Cu)
   (descr "Capacitor SMD 0402, Hand soldering")
   (tags "capacitor 0402 hand")
   (attr smd)

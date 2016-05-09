@@ -3,5 +3,4 @@
 *.blend
 *.blend1
 zap
-kicad-library
-kicad-library-utils
+Capacitors_gen.kicad_pcb

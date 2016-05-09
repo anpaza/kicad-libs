@@ -1,4 +1,4 @@
-(module EIA-6032-28 (layer F.Cu) (tedit 5730EBD3)
+(module EIA-6032-28 (layer F.Cu)
   (descr "Capacitor SMD EIA-6032-28, Size C, Hand soldering")
   (tags "capacitor EIA-6032-28 2312 C hand")
   (attr smd)

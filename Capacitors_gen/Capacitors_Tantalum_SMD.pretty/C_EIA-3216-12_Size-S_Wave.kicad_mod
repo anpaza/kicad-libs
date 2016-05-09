@@ -1,4 +1,4 @@
-(module EIA-3216-12 (layer F.Cu) (tedit 5730EBD3)
+(module EIA-3216-12 (layer F.Cu)
   (descr "Capacitor SMD EIA-3216-12, Size S, Wave soldering")
   (tags "capacitor EIA-3216-12 1206 S wave")
   (attr smd)

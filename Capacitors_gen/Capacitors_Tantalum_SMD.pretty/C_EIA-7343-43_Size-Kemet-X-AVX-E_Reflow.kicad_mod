@@ -1,4 +1,4 @@
-(module EIA-7343-43 (layer F.Cu) (tedit 5730EBD3)
+(module EIA-7343-43 (layer F.Cu)
   (descr "Capacitor SMD EIA-7343-43, Size Kemet-X AVX-E, Reflow soldering")
   (tags "capacitor EIA-7343-43 2917 Kemet-X AVX-E reflow")
   (attr smd)

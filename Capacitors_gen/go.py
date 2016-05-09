@@ -210,8 +210,7 @@ def _GenerateCapacitor (dirmod, dir3d, dim, mod, cap, pads):
     # KLC #6.7
     clearance = 0.15 if cap ['W'] < 1.0 else 0.25
 
-    tstamp = int (time.time ())
-    f.write ("(module %s (layer F.Cu) (tedit %X)\n" % (dim, tstamp))
+    f.write ("(module %s (layer F.Cu)\n" % (dim))
 
     f.write ("  (descr \"Capacitor SMD %s,%s %s soldering\")\n" % \
         (dim, (" Size %s," % cap ["Size"]) if cap.has_key ("Size") else "", mod))

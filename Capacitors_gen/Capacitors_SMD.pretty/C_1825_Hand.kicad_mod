@@ -1,4 +1,4 @@
-(module 1825 (layer F.Cu) (tedit 5730EBD3)
+(module 1825 (layer F.Cu)
   (descr "Capacitor SMD 1825, Hand soldering")
   (tags "capacitor 1825 hand")
   (attr smd)

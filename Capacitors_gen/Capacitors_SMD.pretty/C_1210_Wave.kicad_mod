@@ -1,4 +1,4 @@
-(module 1210 (layer F.Cu) (tedit 5730EBD3)
+(module 1210 (layer F.Cu)
   (descr "Capacitor SMD 1210, Wave soldering")
   (tags "capacitor 1210 wave")
   (attr smd)
