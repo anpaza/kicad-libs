@@ -22,8 +22,8 @@ function mksl() {
 	fi
 }
 
-if [ -d "$1" ] ; then
-	echo "$1 is a dir! Making individual links"
+if [ -d "$1" -a ! -L "$1" ] ; then
+	# $1 is a dir! Making individual links
 	for x in $2/*.$3 ; do
 		# Ignore anything but files
 		test -f "$x" || continue
