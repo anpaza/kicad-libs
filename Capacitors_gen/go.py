@@ -186,6 +186,8 @@ tantalum_chip_capacitors = {
         },
 }
 
+# Polarity mark offset from pad margin
+PMOFS = 0.3 / 2
 
 import os, time, math
 from shutil import copyfile
@@ -245,56 +247,39 @@ def _GenerateCapacitor (dirmod, dir3d, dim, mod, cap, pads):
     # Body outline
     l2 = cap ['L'] / 2
     w2 = cap ['W'] / 2
-    ph2 = pads ['X'] / 2
+    ph2 = pads ['X'] / 2 + PMOFS
     f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
         (-l2, -w2, +l2, -w2))
     f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
         (-l2, +w2, +l2, +w2))
-    if w2 > ph2 + 0.15/2:
+    if w2 > ph2:
         f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
-            (-l2, -w2, -l2, -(ph2 + 0.15/2)))
+            (-l2, -w2, -l2, -ph2))
         f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
-            (-l2, +(ph2 + 0.15/2), -l2, +w2))
+            (-l2, +ph2, -l2, +w2))
         f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
-            (+l2, -w2, +l2, -(ph2 + 0.15/2)))
+            (+l2, -w2, +l2, -ph2))
         f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
-            (+l2, +(ph2 + 0.15/2), +l2, +w2))
+            (+l2, +ph2, +l2, +w2))
 
     # Draw polarity mark
     if cap.has_key ('Pol') and cap ['Pol']:
-        # Line series from middle to right margin of left pad
-        x = 0.15/2
-        n = math.ceil ((pads ['G'] / 2) / 0.15 - 1E-6)
-        while n > 1:
-            f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
-                (-x, -w2, -x, +w2))
-            n -= 1
-            x += 0.15
-        x = pads ['G'] / 2 - 0.15/2
-        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
-            (-x, -w2, -x, +w2))
+        xl = pads ['Z'] / 2 + PMOFS
+        xr = pads ['G'] / 2 - PMOFS
 
-        # Line series from body top to top margin
-        # and from bottom to bottom margin of the left pad
-        n = math.ceil ((w2 - 0.15/2 - ph2) / 0.15 - 1E-6)
-        if n > 1E-6:
-            y = w2 - 0.15
-            while n > 1:
-                f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
-                    (-l2, -y, -(pads ['G'] / 2), -y))
-                f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
-                    (-l2, +y, -(pads ['G'] / 2), +y))
-                n -= 1
-                y -= 0.15
-            f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
-                (-l2, -ph2 - 0.15/2, -(pads ['G'] / 2), -ph2 - 0.15/2))
-            f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
-                (-l2, +ph2 + 0.15/2, -(pads ['G'] / 2), +ph2 + 0.15/2))
+        # Vertical line along the right margin of the left pad
+        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+            (-xr, -w2, -xr, +w2))
+
+        # Two lines along the top and bottom margins
+        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+            (-xl, -ph2, -xr, -ph2))
+        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+            (-xl, +ph2, -xr, +ph2))
 
         # Draw a line along the left margin of the pad
-        x = pads ['Z'] / 2 + 0.15/2
         f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
-            (-x, +ph2 - 0.15/2, -x, -ph2 + 0.15/2))
+            (-xl, +ph2, -xl, -ph2))
 
     # Courtyard
     l2 = pads ['Z'] / 2 + clearance
