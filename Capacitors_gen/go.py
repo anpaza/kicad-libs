@@ -248,18 +248,18 @@ def _GenerateCapacitor (dirmod, dir3d, dim, mod, cap, pads):
     l2 = cap ['L'] / 2
     w2 = cap ['W'] / 2
     ph2 = pads ['X'] / 2 + PMOFS
-    f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
         (-l2, -w2, +l2, -w2))
-    f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
         (-l2, +w2, +l2, +w2))
     if w2 > ph2:
-        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
             (-l2, -w2, -l2, -ph2))
-        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
             (-l2, +ph2, -l2, +w2))
-        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
             (+l2, -w2, +l2, -ph2))
-        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
             (+l2, +ph2, +l2, +w2))
 
     # Draw polarity mark
@@ -268,29 +268,29 @@ def _GenerateCapacitor (dirmod, dir3d, dim, mod, cap, pads):
         xr = pads ['G'] / 2 - PMOFS
 
         # Vertical line along the right margin of the left pad
-        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
             (-xr, -w2, -xr, +w2))
 
         # Two lines along the top and bottom margins
-        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
             (-xl, -ph2, -xr, -ph2))
-        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
             (-xl, +ph2, -xr, +ph2))
 
         # Draw a line along the left margin of the pad
-        f.write ("(fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width 0.15))\n" % \
             (-xl, +ph2, -xl, -ph2))
 
     # Courtyard
     l2 = pads ['Z'] / 2 + clearance
     w2 = (cap ['W'] if cap ['W'] > pads ['X'] else pads ['X']) / 2 + clearance
-    f.write ("(fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
+    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
         (-l2, -w2, +l2, -w2))
-    f.write ("(fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
+    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
         (-l2, +w2, +l2, +w2))
-    f.write ("(fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
+    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
         (-l2, -w2, -l2, +w2))
-    f.write ("(fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
+    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
         (+l2, -w2, +l2, +w2))
 
     fn3d = "%s/C_%s%s.wrl" % (dir3d, dim,
