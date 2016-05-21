@@ -37,70 +37,68 @@
 # these parts.
 #
 
-# The 3D shapes are taken from the terrific collection made by
-# kcswalter@tiscali.it. You can download them from his homepage:
+# Original 3D shapes were borrowed from the terrific collection made by
+# kcswalter@tiscali.it and enhanced a little.
+#
+# You can download them from his homepage:
 # http://smisioto.no-ip.org/elettronica/kicad/kicad-en.htm
 #
 # or better yet, use the download_3d.py script by Chris Pavlina from here:
 # https://github.com/cpavlina/kicad-pcblib
-#
-# The variable below should point at the directory where you have
-# the 3dshape files downloaded and extracted (every to own dir).
-shape3d_dir = "../../kicad-pcblib/3d"
 
 ceramic_chip_capacitors = {
     '0201':
-        { '3dshape': 'smd_cap/c_0201.wrl',
+        {
           'L': 0.60, 'W': 0.30, 'T': 0.15,
           'Reflow' : { 'Z': 1.66, 'G': 0.18, 'X': 0.46, 'Y': 0.74, 'C': 0.92 },
         },
     '0402':
-        { '3dshape': 'smd_cap/c_0402.wrl',
+        {
           'L': 1.00, 'W': 0.50, 'T': 0.25,
           'Reflow' : { 'Z': 2.14, 'G': 0.28, 'X': 0.74, 'Y': 0.93, 'C': 1.21 },
         },
     '0603':
-        { '3dshape': 'smd_cap/c_0603.wrl',
+        {
           'L': 1.60, 'W': 0.80, 'T': 0.35,
           'Reflow' : { 'Z': 2.78, 'G': 0.68, 'X': 1.08, 'Y': 1.05, 'C': 1.73 },
           'Wave'   : { 'Z': 3.18, 'G': 0.68, 'X': 0.80, 'Y': 1.25, 'C': 1.93 },
         },
     '0805':
-        { '3dshape': 'smd_cap/c_0805.wrl',
+        {
           'L': 2.00, 'W': 1.25, 'T': 0.50,
           'Reflow' : { 'Z': 3.30, 'G': 0.70, 'X': 1.60, 'Y': 1.30, 'C': 2.00 },
           'Wave'   : { 'Z': 3.70, 'G': 0.70, 'X': 1.10, 'Y': 1.50, 'C': 2.20 },
         },
     '1206':
-        { '3dshape': 'smd_cap/c_1206.wrl',
+        {
           'L': 3.20, 'W': 1.60, 'T': 0.50,
           'Reflow' : { 'Z': 4.50, 'G': 1.50, 'X': 2.00, 'Y': 1.50, 'C': 3.00 },
           'Wave'   : { 'Z': 4.90, 'G': 1.50, 'X': 1.40, 'Y': 1.70, 'C': 3.20 },
         },
     '1210':
-        { '3dshape': 'smd_cap/c_1210.wrl',
+        {
           'L': 3.20, 'W': 2.50, 'T': 0.50,
           'Reflow' : { 'Z': 4.50, 'G': 1.50, 'X': 2.90, 'Y': 1.50, 'C': 3.00 },
           'Wave'   : { 'Z': 4.90, 'G': 1.50, 'X': 2.00, 'Y': 1.70, 'C': 3.20 },
         },
     '1812':
-        { '3dshape': 'smd_cap/c_1812.wrl',
+        {
           'L': 4.50, 'W': 3.20, 'T': 0.60,
           'Reflow' : { 'Z': 5.90, 'G': 2.30, 'X': 3.70, 'Y': 1.80, 'C': 4.10 },
           'Wave'   : { 'Z': 6.30, 'G': 2.30, 'X': 2.60, 'Y': 2.00, 'C': 4.30 },
         },
     '1825':
-        { '3dshape': 'smd_cap/c_1825.wrl',
+        {
           'L': 4.50, 'W': 6.40, 'T': 0.60,
           'Reflow' : { 'Z': 5.90, 'G': 2.30, 'X': 6.90, 'Y': 1.80, 'C': 4.10 },
         },
     '2220':
-        { '3dshape': 'smd_cap/c_2220.wrl',
+        {
           'L': 5.60, 'W': 5.00, 'T': 0.60,
           'Reflow' : { 'Z': 7.00, 'G': 3.30, 'X': 5.50, 'Y': 1.85, 'C': 5.15 },
         },
     '2225':
-        { '3dshape': 'smd_cap/c_2225.wrl',
+        {
           'L': 5.60, 'W': 6.30, 'T': 0.60,
           'Reflow' : { 'Z': 7.00, 'G': 3.30, 'X': 6.80, 'Y': 1.85, 'C': 5.15 },
         },
@@ -108,77 +106,77 @@ ceramic_chip_capacitors = {
 
 tantalum_chip_capacitors = {
    'EIA-2012-12':
-        { '3dshape': 'smd_cap/c_tant_R.wrl',
+        {
           'Size': 'R', 'InchSize': '0805', 'Pol': True,
           'L': 2.05, 'W1': 1.20, 'W': 1.35, 'H': 1.20, 'T': 0.50,
 #         'Reflow': { 'Z': , 'G': , 'X': , 'Y': , 'C':  },
 #         'Wave':   { 'Z': , 'G': , 'X': , 'Y': , 'C':  },
         },
     'EIA-3216-12':
-        { '3dshape': 'smd_cap/c_tant_S.wrl',
+        {
           'Size': 'S', 'InchSize': '1206', 'Pol': True,
           'L': 3.20, 'W1': 1.20, 'W': 1.60, 'H': 1.20, 'T': 0.80,
           'Reflow': { 'Z': 4.70, 'G': 0.80, 'X': 1.50, 'Y': 1.95, 'C': 2.75 },
           'Wave':   { 'Z': 5.10, 'G': 0.80, 'X': 1.10, 'Y': 2.15, 'C': 2.95 },
         },
     'EIA-3216-18':
-        { '3dshape': 'smd_cap/c_tant_A.wrl',
+        {
           'Size': 'A', 'InchSize': '1206', 'Pol': True,
           'L': 3.20, 'W1': 1.20, 'W': 1.60, 'H': 1.80, 'T': 0.80,
           'Reflow': { 'Z': 4.70, 'G': 0.80, 'X': 1.50, 'Y': 1.95, 'C': 2.75 },
           'Wave':   { 'Z': 5.10, 'G': 0.80, 'X': 1.10, 'Y': 2.15, 'C': 2.95 },
         },
     'EIA-3528-12':
-        { '3dshape': 'smd_cap/c_tant_T.wrl',
+        {
           'Size': 'T', 'InchSize': '1210', 'Pol': True,
           'L': 3.50, 'W1': 2.20, 'W': 2.80, 'H': 1.20, 'T': 0.80,
           'Reflow': { 'Z': 5.00, 'G': 1.10, 'X': 2.50, 'Y': 1.95, 'C': 3.05 },
           'Wave'  : { 'Z': 5.40, 'G': 1.10, 'X': 1.80, 'Y': 2.15, 'C': 3.25 },
         },
     'EIA-3528-21':
-        { '3dshape': 'smd_cap/c_tant_B.wrl',
+        {
           'Size': 'B', 'InchSize': '1210', 'Pol': True,
           'L': 3.50, 'W1': 2.20, 'W': 2.80, 'H': 2.10, 'T': 0.80,
           'Reflow': { 'Z': 5.00, 'G': 1.10, 'X': 2.50, 'Y': 1.95, 'C': 3.05 },
           'Wave':   { 'Z': 5.40, 'G': 1.10, 'X': 1.80, 'Y': 2.15, 'C': 3.25 },
         },
     'EIA-6032-28':
-        { '3dshape': 'smd_cap/c_tant_C.wrl',
+        {
           'Size': 'C', 'InchSize': '2312', 'Pol': True,
           'L': 6.00, 'W1': 2.20, 'W': 3.20, 'H': 2.80, 'T': 1.30,
           'Reflow': { 'Z': 7.60, 'G': 2.50, 'X': 2.50, 'Y': 2.55, 'C': 5.05 },
           'Wave':   { 'Z': 8.00, 'G': 2.50, 'X': 1.80, 'Y': 2.75, 'C': 5.25 },
         },
     'EIA-6032-15':
-        { '3dshape': 'smd_cap/c_tant_U.wrl',
+        {
           'Size': 'Kemet-U AVX-W', 'InchSize': '2312', 'Pol': True,
           'L': 6.00, 'W1': 2.20, 'W': 3.20, 'H': 1.50, 'T': 1.30,
           'Reflow': { 'Z': 7.60, 'G': 2.50, 'X': 2.50, 'Y': 2.55, 'C': 5.05 },
           'Wave':   { 'Z': 8.00, 'G': 2.50, 'X': 1.80, 'Y': 2.75, 'C': 5.25 },
         },
     'EIA-7343-31':
-        { '3dshape': 'smd_cap/c_tant_D.wrl',
+        {
           'Size': 'D', 'InchSize': '2917', 'Pol': True,
           'L': 7.30, 'W1': 2.40, 'W': 4.30, 'H': 3.10, 'T': 1.30,
           'Reflow': { 'Z': 8.90, 'G': 3.80, 'X': 2.70, 'Y': 2.55, 'C': 6.35 },
           'Wave'  : { 'Z': 9.70, 'G': 3.80, 'X': 2.70, 'Y': 2.95, 'C': 6.75 },
         },
     'EIA-7343-20':
-        { '3dshape': 'smd_cap/c_tant_V.wrl',
+        {
           'Size': 'Kemet-V AVX-Y', 'InchSize': '2917', 'Pol': True,
           'L': 7.30, 'W1': 3.10, 'W': 4.30, 'H': 2.00, 'T': 1.30,
           'Reflow': { 'Z': 8.90, 'G': 3.80, 'X': 2.70, 'Y': 2.55, 'C': 6.35 },
           'Wave'  : { 'Z': 9.30, 'G': 3.80, 'X': 1.90, 'Y': 2.75, 'C': 6.55 },
         },
     'EIA-7343-43':
-        { '3dshape': 'smd_cap/c_tant_X.wrl',
+        {
           'Size': 'Kemet-X AVX-E', 'InchSize': '2917', 'Pol': True,
           'L': 7.30, 'W1': 2.40, 'W': 4.30, 'H': 4.30, 'T': 1.30,
           'Reflow': { 'Z': 8.90, 'G': 3.80, 'X': 2.70, 'Y': 2.55, 'C': 6.35 },
           'Wave':   { 'Z': 9.70, 'G': 3.80, 'X': 2.70, 'Y': 2.95, 'C': 6.75 },
         },
     'EIA-7360-38':
-        { '3dshape': 'smd_cap/c_tant_E.wrl',
+        {
           'Size': 'Kemet-E', 'InchSize': '2623', 'Pol': True,
           'L': 7.30, 'W1': 4.10, 'W': 6.00, 'H': 3.80, 'T': 1.30,
           'Reflow': { 'Z': 8.90, 'G': 3.80, 'X': 4.40, 'Y': 2.55, 'C': 6.35 },
@@ -304,20 +302,6 @@ def _GenerateCapacitor (dirmod, dir3d, dim, mod, cap, pads):
 )
 """ % fn3d)
     f.close ()
-
-    # NOTE: DONT' ENABLE THIS UNLESS YOU KNOW WHAT YOU ARE DOING
-    # The original Wings file were modified in Blender and now
-    # are exported from Capacitors_gen.blend with the KiCad VRML
-    # export plugin for Blender
-"""
-    # Copy 3D shape, if it exists
-    if cap.has_key ("3dshape"):
-        s3d = "%s/%s" % (shape3d_dir, cap ["3dshape"])
-        if os.access (s3d, os.R_OK):
-            copyfile (s3d, fn3d)
-        else:
-            print ("  3D shape file not found: %s" % s3d)
-"""
 
 
 def GenerateCapacitor (dim, cap, dest):
