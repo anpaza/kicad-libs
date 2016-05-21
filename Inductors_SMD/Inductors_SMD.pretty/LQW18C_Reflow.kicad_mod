@@ -1,4 +1,4 @@
-(module LQW18C (layer F.Cu)
+(module LQW18C_Reflow (layer F.Cu)
   (descr "Inductor SMD LQW18C, Size 0603/1608, Reflow soldering")
   (tags "inductor LQW18C 0603/1608 reflow")
   (attr smd)

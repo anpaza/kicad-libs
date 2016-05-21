@@ -1,4 +1,4 @@
-(module LQH55D (layer F.Cu)
+(module LQH55D_Hand (layer F.Cu)
   (descr "Inductor SMD LQH55D, Size 2220/5750, Hand soldering")
   (tags "inductor LQH55D 2220/5750 hand")
   (attr smd)

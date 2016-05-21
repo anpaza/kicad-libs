@@ -1,4 +1,4 @@
-(module LQH44N (layer F.Cu)
+(module LQH44N_Hand (layer F.Cu)
   (descr "Inductor SMD LQH44N, Size 1515/4040, Hand soldering")
   (tags "inductor LQH44N 1515/4040 hand")
   (attr smd)

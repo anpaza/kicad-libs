@@ -1,4 +1,4 @@
-(module 1825 (layer F.Cu)
+(module C_1825_Reflow (layer F.Cu)
   (descr "Capacitor SMD 1825, Reflow soldering")
   (tags "capacitor 1825 reflow")
   (attr smd)

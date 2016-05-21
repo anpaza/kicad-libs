@@ -316,6 +316,16 @@ import os, time, math
 from shutil import copyfile
 from glob import glob
 
+
+# Round to nearest 0.05 multiple (for courtyard)
+def round005 (x):
+    # For negative values, do floor(), for positive, do ceil()
+    if x < 0:
+        return (math.floor (x * 20.0 + 0.01)) / 20.0
+    else:
+        return (math.ceil (x * 20.0 - 0.01)) / 20.0
+
+
 def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
     compn = "%s_%s" % (dim, mod)
     fn = "%s/%s.kicad_mod" % (dirmod, compn)
@@ -329,7 +339,7 @@ def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
     # Use thin lines for outline of very small components
     linew = 0.1 if ind ['W'] < 1.0 else 0.15
 
-    f.write ("(module %s (layer F.Cu)\n" % (dim))
+    f.write ("(module %s (layer F.Cu)\n" % (compn))
 
     f.write ("  (descr \"Inductor SMD %s,%s %s soldering\")\n" % \
         (dim, (" Size %s," % ind ["Size"]) if ind.has_key ("Size") else "", mod))
@@ -424,13 +434,13 @@ def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
     l2 = (pads ['B'] if pads.has_key ('B') else pads ['b']) / 2 + clearance
     w2 = (ind ['W'] if ind ['W'] > pads ['c'] else pads ['c']) / 2 + clearance
     f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
-        (-l2, -w2, +l2, -w2))
+        (round005 (-l2), round005 (-w2), round005 (+l2), round005 (-w2)))
     f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
-        (-l2, +w2, +l2, +w2))
+        (round005 (-l2), round005 (+w2), round005 (+l2), round005 (+w2)))
     f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
-        (-l2, -w2, -l2, +w2))
+        (round005 (-l2), round005 (-w2), round005 (-l2), round005 (+w2)))
     f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
-        (+l2, -w2, +l2, +w2))
+        (round005 (+l2), round005 (-w2), round005 (+l2), round005 (+w2)))
 
     fn3d = "%s/%s.wrl" % (dir3d, ind ['3dshape'] if ind.has_key ('3dshape') else dim)
     f.write ("""\

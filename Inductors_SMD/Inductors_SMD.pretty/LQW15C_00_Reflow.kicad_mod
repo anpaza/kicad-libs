@@ -1,4 +1,4 @@
-(module LQW15C_00 (layer F.Cu)
+(module LQW15C_00_Reflow (layer F.Cu)
   (descr "Inductor SMD LQW15C_00, Size 0402/1005, Reflow soldering")
   (tags "inductor LQW15C_00 0402/1005 reflow")
   (attr smd)

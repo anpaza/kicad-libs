@@ -1,4 +1,4 @@
-(module LQB15NN (layer F.Cu)
+(module LQB15NN_Reflow (layer F.Cu)
   (descr "Inductor SMD LQB15NN, Size 0402/1005, Reflow soldering")
   (tags "inductor LQB15NN 0402/1005 reflow")
   (attr smd)

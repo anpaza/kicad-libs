@@ -1,5 +1,7 @@
 (module DR73 (layer F.Cu) (tedit 573E2E92)
-  (tags "Surface Mount Shielded Power Inductor Package")
+  (descr "Surface Mount Shielded Power Inductor Package DR73")
+  (tags "Surface Mount Inductor")
+  (attr smd)
   (fp_text reference REF** (at 0 -4.75) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

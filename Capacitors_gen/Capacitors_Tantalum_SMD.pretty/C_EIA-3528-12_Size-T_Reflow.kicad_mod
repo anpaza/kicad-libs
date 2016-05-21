@@ -1,4 +1,4 @@
-(module EIA-3528-12 (layer F.Cu)
+(module C_EIA-3528-12_Size-T_Reflow (layer F.Cu)
   (descr "Capacitor SMD EIA-3528-12, Size T, Reflow soldering")
   (tags "capacitor EIA-3528-12 1210 T reflow")
   (attr smd)

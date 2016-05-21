@@ -1,4 +1,4 @@
-(module EIA-6032-15 (layer F.Cu)
+(module C_EIA-6032-15_Size-Kemet-U-AVX-W_Wave (layer F.Cu)
   (descr "Capacitor SMD EIA-6032-15, Size Kemet-U AVX-W, Wave soldering")
   (tags "capacitor EIA-6032-15 2312 Kemet-U AVX-W wave")
   (attr smd)

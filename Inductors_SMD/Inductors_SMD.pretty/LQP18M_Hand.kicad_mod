@@ -1,4 +1,4 @@
-(module LQP18M (layer F.Cu)
+(module LQP18M_Hand (layer F.Cu)
   (descr "Inductor SMD LQP18M, Size 0603/1608, Hand soldering")
   (tags "inductor LQP18M 0603/1608 hand")
   (attr smd)

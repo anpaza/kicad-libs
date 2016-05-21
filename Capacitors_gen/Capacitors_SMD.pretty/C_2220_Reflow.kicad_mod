@@ -1,4 +1,4 @@
-(module 2220 (layer F.Cu)
+(module C_2220_Reflow (layer F.Cu)
   (descr "Capacitor SMD 2220, Reflow soldering")
   (tags "capacitor 2220 reflow")
   (attr smd)

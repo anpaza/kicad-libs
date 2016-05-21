@@ -1,6 +1,7 @@
 (module MC-146 (layer F.Cu) (tedit 572DAF80)
   (descr https://support.epson.biz/td/api/doc_check.php?dl=brief_MC-146_en.pdf)
   (tags "Epson 32.768kHz crystal oscillator")
+  (attr smd)
   (fp_text reference REF** (at 0 -1.75 180) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

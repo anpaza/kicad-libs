@@ -1,4 +1,4 @@
-(module LQH5BP (layer F.Cu)
+(module LQH5BP_Reflow (layer F.Cu)
   (descr "Inductor SMD LQH5BP, Size 2020/5050, Reflow soldering")
   (tags "inductor LQH5BP 2020/5050 reflow")
   (attr smd)

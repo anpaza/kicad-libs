@@ -1,4 +1,4 @@
-(module EIA-7343-20 (layer F.Cu)
+(module C_EIA-7343-20_Size-Kemet-V-AVX-Y_Reflow (layer F.Cu)
   (descr "Capacitor SMD EIA-7343-20, Size Kemet-V AVX-Y, Reflow soldering")
   (tags "capacitor EIA-7343-20 2917 Kemet-V AVX-Y reflow")
   (attr smd)

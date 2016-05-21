@@ -1,4 +1,4 @@
-(module LQH44N (layer F.Cu)
+(module LQH44N_Reflow (layer F.Cu)
   (descr "Inductor SMD LQH44N, Size 1515/4040, Reflow soldering")
   (tags "inductor LQH44N 1515/4040 reflow")
   (attr smd)

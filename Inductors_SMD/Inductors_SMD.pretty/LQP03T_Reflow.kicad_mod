@@ -1,4 +1,4 @@
-(module LQP03T (layer F.Cu)
+(module LQP03T_Reflow (layer F.Cu)
   (descr "Inductor SMD LQP03T, Size 0201/0603, Reflow soldering")
   (tags "inductor LQP03T 0201/0603 reflow")
   (attr smd)

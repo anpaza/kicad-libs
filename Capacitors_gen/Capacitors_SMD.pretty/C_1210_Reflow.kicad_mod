@@ -1,4 +1,4 @@
-(module 1210 (layer F.Cu)
+(module C_1210_Reflow (layer F.Cu)
   (descr "Capacitor SMD 1210, Reflow soldering")
   (tags "capacitor 1210 reflow")
   (attr smd)

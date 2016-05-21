@@ -1,4 +1,4 @@
-(module LQH31M (layer F.Cu)
+(module LQH31M_Reflow (layer F.Cu)
   (descr "Inductor SMD LQH31M, Size 1206/3216, Reflow soldering")
   (tags "inductor LQH31M 1206/3216 reflow")
   (attr smd)

@@ -1,4 +1,4 @@
-(module LQP03T (layer F.Cu)
+(module LQP03T_Hand (layer F.Cu)
   (descr "Inductor SMD LQP03T, Size 0201/0603, Hand soldering")
   (tags "inductor LQP03T 0201/0603 hand")
   (attr smd)

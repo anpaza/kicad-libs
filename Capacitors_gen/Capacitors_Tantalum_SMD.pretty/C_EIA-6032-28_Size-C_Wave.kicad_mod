@@ -1,4 +1,4 @@
-(module EIA-6032-28 (layer F.Cu)
+(module C_EIA-6032-28_Size-C_Wave (layer F.Cu)
   (descr "Capacitor SMD EIA-6032-28, Size C, Wave soldering")
   (tags "capacitor EIA-6032-28 2312 C wave")
   (attr smd)

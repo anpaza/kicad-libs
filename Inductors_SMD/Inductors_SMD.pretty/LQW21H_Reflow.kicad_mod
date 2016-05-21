@@ -1,4 +1,4 @@
-(module LQW21H (layer F.Cu)
+(module LQW21H_Reflow (layer F.Cu)
   (descr "Inductor SMD LQW21H, Size 0805/2015, Reflow soldering")
   (tags "inductor LQW21H 0805/2015 reflow")
   (attr smd)

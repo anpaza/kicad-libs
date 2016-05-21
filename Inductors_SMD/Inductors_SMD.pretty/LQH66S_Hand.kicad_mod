@@ -1,4 +1,4 @@
-(module LQH66S (layer F.Cu)
+(module LQH66S_Hand (layer F.Cu)
   (descr "Inductor SMD LQH66S, Size 2525/6363, Hand soldering")
   (tags "inductor LQH66S 2525/6363 hand")
   (attr smd)

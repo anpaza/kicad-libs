@@ -1,4 +1,4 @@
-(module LQM2HP_GH_1.5A (layer F.Cu)
+(module LQM2HP_GH_1.5A_Reflow (layer F.Cu)
   (descr "Inductor SMD LQM2HP_GH_1.5A, Size 1008/2520, Reflow soldering")
   (tags "inductor LQM2HP_GH_1.5A 1008/2520 reflow")
   (attr smd)

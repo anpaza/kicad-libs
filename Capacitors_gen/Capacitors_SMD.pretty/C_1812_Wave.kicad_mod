@@ -1,4 +1,4 @@
-(module 1812 (layer F.Cu)
+(module C_1812_Wave (layer F.Cu)
   (descr "Capacitor SMD 1812, Wave soldering")
   (tags "capacitor 1812 wave")
   (attr smd)

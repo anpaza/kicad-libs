@@ -191,6 +191,16 @@ import os, time, math
 from shutil import copyfile
 from glob import glob
 
+
+# Round to nearest 0.05 multiple (for courtyard)
+def round005 (x):
+    # For negative values, do floor(), for positive, do ceil()
+    if x < 0:
+        return (math.floor (x * 20.0 + 0.01)) / 20.0
+    else:
+        return (math.ceil (x * 20.0 - 0.01)) / 20.0
+
+
 def _GenerateCapacitor (dirmod, dir3d, dim, mod, cap, pads):
     compn = "C_%s%s_%s" % \
         (dim, ("_Size-%s" % cap ["Size"].replace (' ', '-')) \
@@ -210,7 +220,7 @@ def _GenerateCapacitor (dirmod, dir3d, dim, mod, cap, pads):
     # KLC #6.7
     clearance = 0.15 if cap ['W'] < 1.0 else 0.25
 
-    f.write ("(module %s (layer F.Cu)\n" % (dim))
+    f.write ("(module %s (layer F.Cu)\n" % (compn))
 
     f.write ("  (descr \"Capacitor SMD %s,%s %s soldering\")\n" % \
         (dim, (" Size %s," % cap ["Size"]) if cap.has_key ("Size") else "", mod))
@@ -283,13 +293,13 @@ def _GenerateCapacitor (dirmod, dir3d, dim, mod, cap, pads):
     l2 = pads ['Z'] / 2 + clearance
     w2 = (cap ['W'] if cap ['W'] > pads ['X'] else pads ['X']) / 2 + clearance
     f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
-        (-l2, -w2, +l2, -w2))
+        (round005 (-l2), round005 (-w2), round005 (+l2), round005 (-w2)))
     f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
-        (-l2, +w2, +l2, +w2))
+        (round005 (-l2), round005 (+w2), round005 (+l2), round005 (+w2)))
     f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
-        (-l2, -w2, -l2, +w2))
+        (round005 (-l2), round005 (-w2), round005 (-l2), round005 (+w2)))
     f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
-        (+l2, -w2, +l2, +w2))
+        (round005 (+l2), round005 (-w2), round005 (+l2), round005 (+w2)))
 
     fn3d = "%s/C_%s%s.wrl" % (dir3d, dim,
         ("_Size-%s" % cap ["Size"].replace (' ', '-')) if cap.has_key ("Size") else "")

@@ -1,4 +1,4 @@
-(module LQG18H (layer F.Cu)
+(module LQG18H_Hand (layer F.Cu)
   (descr "Inductor SMD LQG18H, Size 0603/1608, Hand soldering")
   (tags "inductor LQG18H 0603/1608 hand")
   (attr smd)

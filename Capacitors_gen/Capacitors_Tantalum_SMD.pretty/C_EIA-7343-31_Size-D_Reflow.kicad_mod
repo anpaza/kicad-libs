@@ -1,4 +1,4 @@
-(module EIA-7343-31 (layer F.Cu)
+(module C_EIA-7343-31_Size-D_Reflow (layer F.Cu)
   (descr "Capacitor SMD EIA-7343-31, Size D, Reflow soldering")
   (tags "capacitor EIA-7343-31 2917 D reflow")
   (attr smd)

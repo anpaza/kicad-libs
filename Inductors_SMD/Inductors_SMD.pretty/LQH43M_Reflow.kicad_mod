@@ -1,4 +1,4 @@
-(module LQH43M (layer F.Cu)
+(module LQH43M_Reflow (layer F.Cu)
   (descr "Inductor SMD LQH43M, Size 1812/4532, Reflow soldering")
   (tags "inductor LQH43M 1812/4532 reflow")
   (attr smd)

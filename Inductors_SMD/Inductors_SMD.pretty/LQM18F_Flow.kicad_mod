@@ -1,4 +1,4 @@
-(module LQM18F (layer F.Cu)
+(module LQM18F_Flow (layer F.Cu)
   (descr "Inductor SMD LQM18F, Size 0603/1608, Flow soldering")
   (tags "inductor LQM18F 0603/1608 flow")
   (attr smd)

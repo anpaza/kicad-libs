@@ -1,4 +1,4 @@
-(module LQH3N (layer F.Cu)
+(module LQH3N_Reflow (layer F.Cu)
   (descr "Inductor SMD LQH3N, Size 1212/3030, Reflow soldering")
   (tags "inductor LQH3N 1212/3030 reflow")
   (attr smd)
