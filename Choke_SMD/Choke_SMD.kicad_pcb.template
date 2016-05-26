@@ -101,6 +101,6 @@
     (uvia_drill 0.1)
   )
 
-@Inductors_SMD.pretty
+@Choke_SMD.pretty
 
 )

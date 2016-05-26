@@ -6,7 +6,7 @@ define NL
 
 endef
 
-LIBS=Capacitors_Alu_SMD Connectors_JST Inductors_SMD Crystals \
+LIBS=Capacitors_Alu_SMD Connectors_JST Choke_SMD Crystals \
 	Capacitors_gen
 KICAD.LIBS=/usr/share/kicad
 CWD=$(shell pwd)

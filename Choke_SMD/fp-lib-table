@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name Inductors_SMD)(type KiCad)(uri ${KIPRJMOD}/Inductors_SMD.pretty)(options "")(descr ""))
+  (lib (name Choke_SMD)(type KiCad)(uri ${KIPRJMOD}/Choke_SMD.pretty)(options "")(descr ""))
 )

@@ -124,7 +124,7 @@
   (fp_line (start -2.25 -4.5) (end 2.25 -4.5) (layer F.Fab) (width 0.15))
   (pad 1 smd rect (at -3.125 0 90) (size 9.5 3.75) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 3.125 0 90) (size 9.5 3.75) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/Choke_CD104.wrl
+  (model Choke_SMD.3dshapes/Choke_CD104.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -153,7 +153,7 @@
   (fp_line (start -2.25 -4.5) (end 2.25 -4.5) (layer F.Fab) (width 0.15))
   (pad 1 smd rect (at -3.125 0 90) (size 9.5 3.75) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 3.125 0 90) (size 9.5 3.75) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/Choke_CD105.wrl
+  (model Choke_SMD.3dshapes/Choke_CD105.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -182,7 +182,7 @@
   (fp_arc (start 0 0) (end 1 -1.5) (angle 112) (layer F.Fab) (width 0.15))
   (pad 1 smd rect (at -1.1 0 90) (size 3.5 1.3) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 1.1 0 90) (size 3.5 1.3) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/Choke_CD32.wrl
+  (model Choke_SMD.3dshapes/Choke_CD32.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -211,7 +211,7 @@
   (fp_line (start -1.1 -2) (end 1.1 -2) (layer F.Fab) (width 0.15))
   (pad 1 smd rect (at -1.625 0 90) (size 4.5 1.75) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 1.625 0 90) (size 4.5 1.75) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/Choke_CD43.wrl
+  (model Choke_SMD.3dshapes/Choke_CD43.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -240,7 +240,7 @@
   (fp_line (start -1.3 -2.6) (end 1.3 -2.6) (layer F.Fab) (width 0.15))
   (pad 1 smd rect (at -1.925 0 90) (size 5.5 2.15) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 1.925 0 90) (size 5.5 2.15) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/Choke_CD54.wrl
+  (model Choke_SMD.3dshapes/Choke_CD54.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -269,7 +269,7 @@
   (fp_line (start -1.7 -3.5) (end 1.7 -3.5) (layer F.Fab) (width 0.15))
   (pad 1 smd rect (at -2.5 0 90) (size 7.5 3) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 2.5 0 90) (size 7.5 3) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/Choke_CD73.wrl
+  (model Choke_SMD.3dshapes/Choke_CD73.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -298,7 +298,7 @@
   (fp_line (start -1.7 -3.5) (end 1.7 -3.5) (layer F.Fab) (width 0.15))
   (pad 1 smd rect (at -2.5 0 90) (size 7.5 3) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 2.5 0 90) (size 7.5 3) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/Choke_CD75.wrl
+  (model Choke_SMD.3dshapes/Choke_CD75.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -346,7 +346,7 @@
   (fp_line (start -6.25 6.25) (end -6.25 -6.25) (layer F.Fab) (width 0.15))
   (pad 1 smd rect (at -4.975 0 90) (size 5.5 3.2) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 4.975 0 90) (size 5.5 3.2) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/Choke_DR125.wrl
+  (model Choke_SMD.3dshapes/Choke_DR125.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -394,7 +394,7 @@
   (fp_line (start -6.25 6.25) (end -6.25 -6.25) (layer F.Fab) (width 0.15))
   (pad 1 smd rect (at -4.975 0 90) (size 5.5 3.2) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 4.975 0 90) (size 5.5 3.2) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/Choke_DR127.wrl
+  (model Choke_SMD.3dshapes/Choke_DR127.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -442,7 +442,7 @@
   (fp_line (start -3.8 3.8) (end -3.8 -3.8) (layer F.Fab) (width 0.15))
   (pad 1 smd rect (at -3 0 90) (size 3.25 2.5) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 3 0 90) (size 3.25 2.5) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/Choke_DR73.wrl
+  (model Choke_SMD.3dshapes/Choke_DR73.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -490,7 +490,7 @@
   (fp_line (start -3.8 3.8) (end -3.8 -3.8) (layer F.Fab) (width 0.15))
   (pad 1 smd rect (at -3 0 90) (size 3.25 2.5) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 3 0 90) (size 3.25 2.5) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/Choke_DR74.wrl
+  (model Choke_SMD.3dshapes/Choke_DR74.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -519,7 +519,7 @@
   (fp_line (start -1 0.45) (end 1 0.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1 -0.45) (end -1 0.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1 -0.45) (end 1 0.45) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQB15NN.wrl
+  (model Choke_SMD.3dshapes/Choke_LQB15NN.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -548,7 +548,7 @@
   (fp_line (start -0.8 0.4) (end 0.8 0.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.8 -0.4) (end 0.8 0.4) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQB15NN.wrl
+  (model Choke_SMD.3dshapes/Choke_LQB15NN.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -581,7 +581,7 @@
   (fp_line (start -1.35 0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.35 -0.55) (end -1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.35 -0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18F.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18F.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -610,7 +610,7 @@
   (fp_line (start -1.45 0.6) (end 1.45 0.6) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.45 -0.6) (end -1.45 0.6) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.45 -0.6) (end 1.45 0.6) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18F.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18F.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -643,7 +643,7 @@
   (fp_line (start -1.1 0.55) (end 1.1 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.1 -0.55) (end -1.1 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.1 -0.55) (end 1.1 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18F.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18F.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -677,7 +677,7 @@
   (fp_line (start -0.9 0.45) (end 0.9 0.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.9 -0.45) (end -0.9 0.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.9 -0.45) (end 0.9 0.45) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQG15H.wrl
+  (model Choke_SMD.3dshapes/Choke_LQG15H.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -711,7 +711,7 @@
   (fp_line (start -0.85 0.4) (end 0.85 0.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.85 -0.4) (end -0.85 0.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.85 -0.4) (end 0.85 0.4) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQG15H.wrl
+  (model Choke_SMD.3dshapes/Choke_LQG15H.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -745,7 +745,7 @@
   (fp_line (start -1.25 0.55) (end 1.25 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.25 -0.55) (end -1.25 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.25 -0.55) (end 1.25 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQG18H.wrl
+  (model Choke_SMD.3dshapes/Choke_LQG18H.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -783,7 +783,7 @@
   (fp_line (start -1.05 0.55) (end 1.05 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.05 -0.55) (end -1.05 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.05 -0.55) (end 1.05 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQG18H.wrl
+  (model Choke_SMD.3dshapes/Choke_LQG18H.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -817,7 +817,7 @@
   (fp_line (start -1.85 1.35) (end 1.85 1.35) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.85 -1.35) (end -1.85 1.35) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.85 -1.35) (end 1.85 1.35) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -851,7 +851,7 @@
   (fp_line (start -1.5 1.25) (end 1.5 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.5 -1.25) (end -1.5 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.5 -1.25) (end 1.5 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -889,7 +889,7 @@
   (fp_line (start -2.15 1.25) (end 2.15 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -1.25) (end -2.15 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -1.25) (end 2.15 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -927,7 +927,7 @@
   (fp_line (start -1.75 1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1.25) (end -1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -960,7 +960,7 @@
   (fp_line (start -1.9 1.05) (end 1.9 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.9 -1.05) (end -1.9 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.9 -1.05) (end 1.9 1.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH2MC.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH2MC.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -993,7 +993,7 @@
   (fp_line (start -1.55 1.05) (end 1.55 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.55 -1.05) (end -1.55 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.55 -1.05) (end 1.55 1.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH2MC.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH2MC.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1022,7 +1022,7 @@
   (fp_line (start -3.1 1.1) (end 3.1 1.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.1 -1.1) (end -3.1 1.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.1 -1.1) (end 3.1 1.1) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH31C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH31C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1051,7 +1051,7 @@
   (fp_line (start -2.5 1.05) (end 2.5 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.5 -1.05) (end -2.5 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.5 -1.05) (end 2.5 1.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH31C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH31C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1080,7 +1080,7 @@
   (fp_line (start -3.1 1.1) (end 3.1 1.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.1 -1.1) (end -3.1 1.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.1 -1.1) (end 3.1 1.1) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH31H.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH31H.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1109,7 +1109,7 @@
   (fp_line (start -2.5 1.05) (end 2.5 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.5 -1.05) (end -2.5 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.5 -1.05) (end 2.5 1.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH31H.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH31H.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1138,7 +1138,7 @@
   (fp_line (start -3.1 1.1) (end 3.1 1.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.1 -1.1) (end -3.1 1.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.1 -1.1) (end 3.1 1.1) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH31C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH31C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1167,7 +1167,7 @@
   (fp_line (start -2.5 1.05) (end 2.5 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.5 -1.05) (end -2.5 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.5 -1.05) (end 2.5 1.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH31C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH31C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1202,7 +1202,7 @@
   (fp_line (start -3.7 1.5) (end 3.7 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.7 -1.5) (end -3.7 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.7 -1.5) (end 3.7 1.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH32M.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH32M.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1237,7 +1237,7 @@
   (fp_line (start -3 1.5) (end 3 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3 -1.5) (end -3 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3 -1.5) (end 3 1.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH32M.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH32M.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1272,7 +1272,7 @@
   (fp_line (start -3.7 1.5) (end 3.7 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.7 -1.5) (end -3.7 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.7 -1.5) (end 3.7 1.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH32M.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH32M.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1307,7 +1307,7 @@
   (fp_line (start -3 1.5) (end 3 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3 -1.5) (end -3 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3 -1.5) (end 3 1.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH32M.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH32M.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1340,7 +1340,7 @@
   (fp_line (start -2.65 1.5) (end 2.65 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.65 -1.5) (end -2.65 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.65 -1.5) (end 2.65 1.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH32P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH32P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1373,7 +1373,7 @@
   (fp_line (start -2.15 1.5) (end 2.15 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -1.5) (end -2.15 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -1.5) (end 2.15 1.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH32P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH32P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1409,7 +1409,7 @@
   (fp_line (start -2.7 2.1) (end 2.7 2.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.7 -2.1) (end -2.7 2.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.7 -2.1) (end 2.7 2.1) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH3N.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH3N.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1445,7 +1445,7 @@
   (fp_line (start -2.2 1.9) (end 2.2 1.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.2 -1.9) (end -2.2 1.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.2 -1.9) (end 2.2 1.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH3N.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH3N.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1476,7 +1476,7 @@
   (fp_line (start -4.95 1.9) (end 4.95 1.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -4.95 -1.9) (end -4.95 1.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 4.95 -1.9) (end 4.95 1.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH43C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH43C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1507,7 +1507,7 @@
   (fp_line (start -4 1.85) (end 4 1.85) (layer F.CrtYd) (width 0.05))
   (fp_line (start -4 -1.85) (end -4 1.85) (layer F.CrtYd) (width 0.05))
   (fp_line (start 4 -1.85) (end 4 1.85) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH43C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH43C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1538,7 +1538,7 @@
   (fp_line (start -4.95 1.9) (end 4.95 1.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -4.95 -1.9) (end -4.95 1.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 4.95 -1.9) (end 4.95 1.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH43C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH43C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1569,7 +1569,7 @@
   (fp_line (start -4 1.85) (end 4 1.85) (layer F.CrtYd) (width 0.05))
   (fp_line (start -4 -1.85) (end -4 1.85) (layer F.CrtYd) (width 0.05))
   (fp_line (start 4 -1.85) (end 4 1.85) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH43C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH43C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1600,7 +1600,7 @@
   (fp_line (start -4.95 1.9) (end 4.95 1.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -4.95 -1.9) (end -4.95 1.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 4.95 -1.9) (end 4.95 1.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH43C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH43C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1631,7 +1631,7 @@
   (fp_line (start -4 1.85) (end 4 1.85) (layer F.CrtYd) (width 0.05))
   (fp_line (start -4 -1.85) (end -4 1.85) (layer F.CrtYd) (width 0.05))
   (fp_line (start 4 -1.85) (end 4 1.85) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH43C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH43C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1662,7 +1662,7 @@
   (fp_line (start -4.95 1.9) (end 4.95 1.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -4.95 -1.9) (end -4.95 1.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 4.95 -1.9) (end 4.95 1.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH43C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH43C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1693,7 +1693,7 @@
   (fp_line (start -4 1.85) (end 4 1.85) (layer F.CrtYd) (width 0.05))
   (fp_line (start -4 -1.85) (end -4 1.85) (layer F.CrtYd) (width 0.05))
   (fp_line (start 4 -1.85) (end 4 1.85) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH43C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH43C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1726,7 +1726,7 @@
   (fp_line (start -3 2.25) (end 3 2.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3 -2.25) (end -3 2.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3 -2.25) (end 3 2.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH44N.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH44N.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1759,7 +1759,7 @@
   (fp_line (start -2.45 2.25) (end 2.45 2.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.45 -2.25) (end -2.45 2.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.45 -2.25) (end 2.45 2.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH44N.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH44N.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1792,7 +1792,7 @@
   (fp_line (start -3 2.25) (end 3 2.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3 -2.25) (end -3 2.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3 -2.25) (end 3 2.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH44P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH44P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1825,7 +1825,7 @@
   (fp_line (start -2.45 2.25) (end 2.45 2.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.45 -2.25) (end -2.45 2.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.45 -2.25) (end 2.45 2.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH44P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH44P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1858,7 +1858,7 @@
   (fp_line (start -5.25 2.75) (end 5.25 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -5.25 -2.75) (end -5.25 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 5.25 -2.75) (end 5.25 2.75) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH55D.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH55D.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1891,7 +1891,7 @@
   (fp_line (start -4.25 2.75) (end 4.25 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -4.25 -2.75) (end -4.25 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 4.25 -2.75) (end 4.25 2.75) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH55D.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH55D.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1924,7 +1924,7 @@
   (fp_line (start -3.7 2.75) (end 3.7 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.7 -2.75) (end -3.7 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.7 -2.75) (end 3.7 2.75) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH5BP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH5BP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1957,7 +1957,7 @@
   (fp_line (start -3 2.75) (end 3 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3 -2.75) (end -3 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3 -2.75) (end 3 2.75) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH5BP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH5BP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -1990,7 +1990,7 @@
   (fp_line (start -5.25 3.4) (end 5.25 3.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start -5.25 -3.4) (end -5.25 3.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start 5.25 -3.4) (end 5.25 3.4) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH66S.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH66S.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2023,7 +2023,7 @@
   (fp_line (start -4.25 3.4) (end 4.25 3.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start -4.25 -3.4) (end -4.25 3.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start 4.25 -3.4) (end 4.25 3.4) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH66S.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH66S.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2056,7 +2056,7 @@
   (fp_line (start -1.35 0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.35 -0.55) (end -1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.35 -0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18F.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18F.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2085,7 +2085,7 @@
   (fp_line (start -1.35 0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.35 -0.55) (end -1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.35 -0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18F.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18F.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2118,7 +2118,7 @@
   (fp_line (start -1.1 0.55) (end 1.1 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.1 -0.55) (end -1.1 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.1 -0.55) (end 1.1 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18F.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18F.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2151,7 +2151,7 @@
   (fp_line (start -1.35 0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.35 -0.55) (end -1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.35 -0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18F.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18F.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2180,7 +2180,7 @@
   (fp_line (start -1.45 0.6) (end 1.45 0.6) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.45 -0.6) (end -1.45 0.6) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.45 -0.6) (end 1.45 0.6) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18F.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18F.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2213,7 +2213,7 @@
   (fp_line (start -1.1 0.55) (end 1.1 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.1 -0.55) (end -1.1 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.1 -0.55) (end 1.1 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18F.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18F.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2246,7 +2246,7 @@
   (fp_line (start -1.35 0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.35 -0.55) (end -1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.35 -0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2275,7 +2275,7 @@
   (fp_line (start -1.35 0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.35 -0.55) (end -1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.35 -0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2308,7 +2308,7 @@
   (fp_line (start -1.1 0.55) (end 1.1 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.1 -0.55) (end -1.1 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.1 -0.55) (end 1.1 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM18P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM18P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2337,7 +2337,7 @@
   (fp_line (start -2.45 0.9) (end 2.45 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.45 -0.9) (end -2.45 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.45 -0.9) (end 2.45 0.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM21D.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM21D.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2370,7 +2370,7 @@
   (fp_line (start -2 0.9) (end 2 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2 -0.9) (end -2 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2 -0.9) (end 2 0.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM21D.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM21D.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2399,7 +2399,7 @@
   (fp_line (start -2.45 0.9) (end 2.45 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.45 -0.9) (end -2.45 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.45 -0.9) (end 2.45 0.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM21D.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM21D.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2432,7 +2432,7 @@
   (fp_line (start -2 0.9) (end 2 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2 -0.9) (end -2 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2 -0.9) (end 2 0.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM21D.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM21D.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2465,7 +2465,7 @@
   (fp_line (start -2.25 0.9) (end 2.25 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.25 -0.9) (end -2.25 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.25 -0.9) (end 2.25 0.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM21D.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM21D.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2494,7 +2494,7 @@
   (fp_line (start -2.15 0.9) (end 2.15 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -0.9) (end -2.15 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -0.9) (end 2.15 0.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM21D.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM21D.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2527,7 +2527,7 @@
   (fp_line (start -1.75 0.9) (end 1.75 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -0.9) (end -1.75 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -0.9) (end 1.75 0.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM21D.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM21D.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2556,7 +2556,7 @@
   (fp_line (start -2.45 0.9) (end 2.45 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.45 -0.9) (end -2.45 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.45 -0.9) (end 2.45 0.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM21P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM21P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2589,7 +2589,7 @@
   (fp_line (start -2 0.9) (end 2 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2 -0.9) (end -2 0.9) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2 -0.9) (end 2 0.9) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM21P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM21P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2622,7 +2622,7 @@
   (fp_line (start -2.15 1.25) (end 2.15 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -1.25) (end -2.15 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -1.25) (end 2.15 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2655,7 +2655,7 @@
   (fp_line (start -1.75 1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1.25) (end -1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2690,7 +2690,7 @@
   (fp_line (start -2.15 1.45) (end 2.15 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -1.45) (end -2.15 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -1.45) (end 2.15 1.45) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2725,7 +2725,7 @@
   (fp_line (start -1.75 1.45) (end 1.75 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1.45) (end -1.75 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1.45) (end 1.75 1.45) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2760,7 +2760,7 @@
   (fp_line (start -2.15 2.05) (end 2.15 2.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -2.05) (end -2.15 2.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -2.05) (end 2.15 2.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2795,7 +2795,7 @@
   (fp_line (start -1.75 2.05) (end 1.75 2.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -2.05) (end -1.75 2.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -2.05) (end 1.75 2.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2828,7 +2828,7 @@
   (fp_line (start -2.15 1.25) (end 2.15 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -1.25) (end -2.15 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -1.25) (end 2.15 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2861,7 +2861,7 @@
   (fp_line (start -2.15 1.25) (end 2.15 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -1.25) (end -2.15 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -1.25) (end 2.15 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2894,7 +2894,7 @@
   (fp_line (start -1.75 1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1.25) (end -1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2929,7 +2929,7 @@
   (fp_line (start -2.15 1.45) (end 2.15 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -1.45) (end -2.15 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -1.45) (end 2.15 1.45) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2964,7 +2964,7 @@
   (fp_line (start -1.75 1.45) (end 1.75 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1.45) (end -1.75 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1.45) (end 1.75 1.45) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -2999,7 +2999,7 @@
   (fp_line (start -2.15 2.05) (end 2.15 2.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -2.05) (end -2.15 2.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -2.05) (end 2.15 2.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3034,7 +3034,7 @@
   (fp_line (start -1.75 2.05) (end 1.75 2.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -2.05) (end -1.75 2.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -2.05) (end 1.75 2.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3067,7 +3067,7 @@
   (fp_line (start -1.75 1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1.25) (end -1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3096,7 +3096,7 @@
   (fp_line (start -1.75 1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1.25) (end -1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2MP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2MP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3125,7 +3125,7 @@
   (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.45 -1.15) (end -1.45 1.15) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.45 -1.15) (end 1.45 1.15) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2MP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2MP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3156,7 +3156,7 @@
   (fp_line (start -1.75 1.45) (end 1.75 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1.45) (end -1.75 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1.45) (end 1.75 1.45) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2MP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2MP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3187,7 +3187,7 @@
   (fp_line (start -1.45 1.45) (end 1.45 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.45 -1.45) (end -1.45 1.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.45 -1.45) (end 1.45 1.45) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2MP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2MP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3218,7 +3218,7 @@
   (fp_line (start -1.75 2.75) (end 1.75 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -2.75) (end -1.75 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -2.75) (end 1.75 2.75) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2MP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2MP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3249,7 +3249,7 @@
   (fp_line (start -1.45 2.75) (end 1.45 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.45 -2.75) (end -1.45 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.45 -2.75) (end 1.45 2.75) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2MP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2MP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3278,7 +3278,7 @@
   (fp_line (start -1.75 1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1.25) (end -1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2MP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2MP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3307,7 +3307,7 @@
   (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.45 -1.15) (end -1.45 1.15) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.45 -1.15) (end 1.45 1.15) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM2MP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM2MP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3340,7 +3340,7 @@
   (fp_line (start -3.2 1.05) (end 3.2 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.2 -1.05) (end -3.2 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.2 -1.05) (end 3.2 1.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM31P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM31P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3373,7 +3373,7 @@
   (fp_line (start -2.6 1.05) (end 2.6 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.6 -1.05) (end -2.6 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.6 -1.05) (end 2.6 1.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM31P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM31P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3402,7 +3402,7 @@
   (fp_line (start -2.5 1.75) (end 2.5 1.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.5 -1.75) (end -2.5 1.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.5 -1.75) (end 2.5 1.75) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM32P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM32P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3431,7 +3431,7 @@
   (fp_line (start -2.05 1.6) (end 2.05 1.6) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.05 -1.6) (end -2.05 1.6) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.05 -1.6) (end 2.05 1.6) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQM32P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQM32P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3465,7 +3465,7 @@
   (fp_line (start -0.45 0.3) (end 0.45 0.3) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.45 -0.3) (end -0.45 0.3) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.45 -0.3) (end 0.45 0.3) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQP02TN.wrl
+  (model Choke_SMD.3dshapes/Choke_LQP02TN.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3499,7 +3499,7 @@
   (fp_line (start -0.35 0.25) (end 0.35 0.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.35 -0.25) (end -0.35 0.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.35 -0.25) (end 0.35 0.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQP02TN.wrl
+  (model Choke_SMD.3dshapes/Choke_LQP02TN.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3528,7 +3528,7 @@
   (fp_line (start -0.5 0.3) (end 0.5 0.3) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.5 -0.3) (end -0.5 0.3) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.5 -0.3) (end 0.5 0.3) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQP02TQ.wrl
+  (model Choke_SMD.3dshapes/Choke_LQP02TQ.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3557,7 +3557,7 @@
   (fp_line (start -0.45 0.25) (end 0.45 0.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.45 -0.25) (end -0.45 0.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.45 -0.25) (end 0.45 0.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQP02TQ.wrl
+  (model Choke_SMD.3dshapes/Choke_LQP02TQ.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3591,7 +3591,7 @@
   (fp_line (start -0.6 0.3) (end 0.6 0.3) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.6 -0.3) (end -0.6 0.3) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.6 -0.3) (end 0.6 0.3) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQP03T.wrl
+  (model Choke_SMD.3dshapes/Choke_LQP03T.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3625,7 +3625,7 @@
   (fp_line (start -0.55 0.3) (end 0.55 0.3) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.55 -0.3) (end -0.55 0.3) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.55 -0.3) (end 0.55 0.3) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQP03T.wrl
+  (model Choke_SMD.3dshapes/Choke_LQP03T.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3654,7 +3654,7 @@
   (fp_line (start -0.9 0.45) (end 0.9 0.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.9 -0.45) (end -0.9 0.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.9 -0.45) (end 0.9 0.45) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQP15M.wrl
+  (model Choke_SMD.3dshapes/Choke_LQP15M.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3683,7 +3683,7 @@
   (fp_line (start -0.85 0.4) (end 0.85 0.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.85 -0.4) (end -0.85 0.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.85 -0.4) (end 0.85 0.4) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQP15M.wrl
+  (model Choke_SMD.3dshapes/Choke_LQP15M.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3712,7 +3712,7 @@
   (fp_line (start -1.25 0.55) (end 1.25 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.25 -0.55) (end -1.25 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.25 -0.55) (end 1.25 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQP18M.wrl
+  (model Choke_SMD.3dshapes/Choke_LQP18M.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3745,7 +3745,7 @@
   (fp_line (start -1.05 0.55) (end 1.05 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.05 -0.55) (end -1.05 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.05 -0.55) (end 1.05 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQP18M.wrl
+  (model Choke_SMD.3dshapes/Choke_LQP18M.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3774,7 +3774,7 @@
   (fp_line (start -0.6 0.4) (end 0.6 0.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.6 -0.4) (end -0.6 0.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.6 -0.4) (end 0.6 0.4) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW03A.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW03A.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3803,7 +3803,7 @@
   (fp_line (start -0.5 0.35) (end 0.5 0.35) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.5 -0.35) (end -0.5 0.35) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.5 -0.35) (end 0.5 0.35) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW03A.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW03A.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3832,7 +3832,7 @@
   (fp_line (start -0.8 0.4) (end 0.8 0.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.8 -0.4) (end 0.8 0.4) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW04A.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW04A.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3861,7 +3861,7 @@
   (fp_line (start -0.65 0.35) (end 0.65 0.35) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.65 -0.35) (end -0.65 0.35) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.65 -0.35) (end 0.65 0.35) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW04A.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW04A.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3890,7 +3890,7 @@
   (fp_line (start -0.9 0.55) (end 0.9 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.9 -0.55) (end -0.9 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.9 -0.55) (end 0.9 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW15C_00.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW15C_00.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3919,7 +3919,7 @@
   (fp_line (start -0.75 0.5) (end 0.75 0.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.75 -0.5) (end -0.75 0.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.75 -0.5) (end 0.75 0.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW15C_00.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW15C_00.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3948,7 +3948,7 @@
   (fp_line (start -1.05 0.55) (end 1.05 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.05 -0.55) (end -1.05 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.05 -0.55) (end 1.05 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW15C_10.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW15C_10.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -3977,7 +3977,7 @@
   (fp_line (start -0.9 0.5) (end 0.9 0.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.9 -0.5) (end -0.9 0.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.9 -0.5) (end 0.9 0.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW15C_10.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW15C_10.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4006,7 +4006,7 @@
   (fp_line (start -1.05 0.5) (end 1.05 0.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.05 -0.5) (end -1.05 0.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.05 -0.5) (end 1.05 0.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW15C_00.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW15C_00.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4035,7 +4035,7 @@
   (fp_line (start -0.85 0.45) (end 0.85 0.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.85 -0.45) (end -0.85 0.45) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.85 -0.45) (end 0.85 0.45) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW15C_00.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW15C_00.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4064,7 +4064,7 @@
   (fp_line (start -1.05 0.55) (end 1.05 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.05 -0.55) (end -1.05 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.05 -0.55) (end 1.05 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW15C_10.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW15C_10.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4093,7 +4093,7 @@
   (fp_line (start -0.85 0.5) (end 0.85 0.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.85 -0.5) (end -0.85 0.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.85 -0.5) (end 0.85 0.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW15C_10.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW15C_10.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4122,7 +4122,7 @@
   (fp_line (start -1.15 0.65) (end 1.15 0.65) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.15 -0.65) (end -1.15 0.65) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.15 -0.65) (end 1.15 0.65) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW18C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW18C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4155,7 +4155,7 @@
   (fp_line (start -1.1 0.55) (end 1.1 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.1 -0.55) (end -1.1 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.1 -0.55) (end 1.1 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW18C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW18C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4184,7 +4184,7 @@
   (fp_line (start -1.4 0.8) (end 1.4 0.8) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.4 -0.8) (end -1.4 0.8) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.4 -0.8) (end 1.4 0.8) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW18C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW18C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4213,7 +4213,7 @@
   (fp_line (start -1.15 0.75) (end 1.15 0.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.15 -0.75) (end -1.15 0.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.15 -0.75) (end 1.15 0.75) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW18C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW18C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4242,7 +4242,7 @@
   (fp_line (start -1.55 0.7) (end 1.55 0.7) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.55 -0.7) (end -1.55 0.7) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.55 -0.7) (end 1.55 0.7) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW18C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW18C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4271,7 +4271,7 @@
   (fp_line (start -1.25 0.65) (end 1.25 0.65) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.25 -0.65) (end -1.25 0.65) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.25 -0.65) (end 1.25 0.65) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW18C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW18C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4300,7 +4300,7 @@
   (fp_line (start -1.9 0.95) (end 1.9 0.95) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.9 -0.95) (end -1.9 0.95) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.9 -0.95) (end 1.9 0.95) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW21H.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW21H.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4329,7 +4329,7 @@
   (fp_line (start -1.55 0.85) (end 1.55 0.85) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.55 -0.85) (end -1.55 0.85) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.55 -0.85) (end 1.55 0.85) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW21H.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW21H.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4358,7 +4358,7 @@
   (fp_line (start -2 1.25) (end 2 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2 -1.25) (end -2 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2 -1.25) (end 2 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW2BA.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW2BA.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4387,7 +4387,7 @@
   (fp_line (start -1.65 1.15) (end 1.65 1.15) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.65 -1.15) (end -1.65 1.15) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.65 -1.15) (end 1.65 1.15) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW2BA.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW2BA.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4416,7 +4416,7 @@
   (fp_line (start -2.15 1) (end 2.15 1) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -1) (end -2.15 1) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -1) (end 2.15 1) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW2BH.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW2BH.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4449,7 +4449,7 @@
   (fp_line (start -1.75 1) (end 1.75 1) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1) (end -1.75 1) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1) (end 1.75 1) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW2BH.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW2BH.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4478,7 +4478,7 @@
   (fp_line (start -2.35 1.65) (end 2.35 1.65) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.35 -1.65) (end -2.35 1.65) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.35 -1.65) (end 2.35 1.65) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW2UA.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW2UA.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4507,7 +4507,7 @@
   (fp_line (start -1.9 1.55) (end 1.9 1.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.9 -1.55) (end -1.9 1.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.9 -1.55) (end 1.9 1.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQW2UA.wrl
+  (model Choke_SMD.3dshapes/Choke_LQW2UA.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4536,7 +4536,7 @@
   (fp_line (start -3.1 1.1) (end 3.1 1.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.1 -1.1) (end -3.1 1.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.1 -1.1) (end 3.1 1.1) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH31C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH31C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
@@ -4565,7 +4565,7 @@
   (fp_line (start -2.5 1.05) (end 2.5 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.5 -1.05) (end -2.5 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.5 -1.05) (end 2.5 1.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH31C.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH31C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

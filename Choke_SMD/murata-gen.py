@@ -565,13 +565,13 @@ def GenerateTestBoard (ifn, ofn):
 # --- === main === --- #
 
 for dim,ind in murata_power_inductors.items ():
-    GenerateInductor (dim, ind, "Inductors_SMD")
+    GenerateInductor (dim, ind, "Choke_SMD")
 
 for dim,ind in murata_general_inductors.items ():
-    GenerateInductor (dim, ind, "Inductors_SMD")
+    GenerateInductor (dim, ind, "Choke_SMD")
 
 for dim,ind in murata_rf_inductors.items ():
-    GenerateInductor (dim, ind, "Inductors_SMD")
+    GenerateInductor (dim, ind, "Choke_SMD")
 
 # Generate the test board
-GenerateTestBoard ("Inductors_SMD.kicad_pcb.template", "Inductors_SMD.kicad_pcb")
+GenerateTestBoard ("Choke_SMD.kicad_pcb.template", "Choke_SMD.kicad_pcb")

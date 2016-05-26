@@ -29,7 +29,7 @@
   (fp_line (start -1.75 1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1.25) (end -1.75 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1.25) (end 1.75 1.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH2HP.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH2HP.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

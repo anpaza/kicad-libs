@@ -24,7 +24,7 @@
   (fp_line (start -3 2.25) (end 3 2.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3 -2.25) (end -3 2.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3 -2.25) (end 3 2.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/Choke_LQH44P.wrl
+  (model Choke_SMD.3dshapes/Choke_LQH44P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
