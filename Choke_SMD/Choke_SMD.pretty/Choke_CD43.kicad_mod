@@ -5,7 +5,7 @@
   (fp_text reference REF** (at 0 -3.15 180) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value CD43 (at 0 3.25) (layer F.Fab)
+  (fp_text value Choke_CD43 (at 0 3.25) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start -0.65 2) (end 0.65 2) (layer F.SilkS) (width 0.15))

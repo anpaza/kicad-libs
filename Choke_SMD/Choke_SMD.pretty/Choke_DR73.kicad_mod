@@ -5,7 +5,7 @@
   (fp_text reference REF** (at 0 -4.75) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value DR73 (at 0 4.8) (layer F.Fab)
+  (fp_text value Choke_DR73 (at 0 4.8) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_arc (start 0 0) (end 2.4 1.8) (angle 107) (layer F.SilkS) (width 0.15))
