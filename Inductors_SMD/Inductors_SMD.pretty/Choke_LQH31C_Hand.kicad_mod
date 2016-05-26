@@ -1,11 +1,11 @@
-(module LQH31C_Hand (layer F.Cu)
+(module Choke_LQH31C_Hand (layer F.Cu)
   (descr "Inductor SMD LQH31C, Size 1206/3216, Hand soldering")
   (tags "inductor LQH31C 1206/3216 hand")
   (attr smd)
   (fp_text reference REF** (at 0 -1.775) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value LQH31C_Hand (at 0 0) (layer F.Fab)
+  (fp_text value Choke_LQH31C_Hand (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (pad 1 smd rect (at -1.65625 0) (size 2.3125 1.65) (layers F.Cu F.Paste F.Mask))
@@ -16,7 +16,7 @@
   (fp_line (start -3.1 1.1) (end 3.1 1.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.1 -1.1) (end -3.1 1.1) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.1 -1.1) (end 3.1 1.1) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/LQH31C.wrl
+  (model Inductors_SMD.3dshapes/Choke_LQH31C.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

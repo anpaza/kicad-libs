@@ -1,4 +1,4 @@
-(module CD73 (layer F.Cu) (tedit 573E2CF8)
+(module Choke_CD73 (layer F.Cu) (tedit 573E2CF8)
   (descr "Surface Mount Power Inductor Package CD73")
   (tags "Surface Mount Inductor")
   (attr smd)
@@ -18,7 +18,7 @@
   (fp_line (start -1.7 -3.5) (end 1.7 -3.5) (layer F.SilkS) (width 0.15))
   (pad 1 smd rect (at -2.5 0 90) (size 7.5 3) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 2.5 0 90) (size 7.5 3) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/CD73.wrl
+  (model Inductors_SMD.3dshapes/Choke_CD73.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

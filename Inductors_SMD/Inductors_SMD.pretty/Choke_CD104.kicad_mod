@@ -1,4 +1,4 @@
-(module CD104 (layer F.Cu) (tedit 573E2C10)
+(module Choke_CD104 (layer F.Cu) (tedit 573E2C10)
   (descr "Surface Mount Power Inductor Package CD104")
   (tags "Surface Mount Inductor")
   (attr smd)
@@ -18,7 +18,7 @@
   (fp_line (start -2.25 -4.5) (end 2.25 -4.5) (layer F.SilkS) (width 0.15))
   (pad 1 smd rect (at -3.125 0 90) (size 9.5 3.75) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 3.125 0 90) (size 9.5 3.75) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/CD104.wrl
+  (model Inductors_SMD.3dshapes/Choke_CD104.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

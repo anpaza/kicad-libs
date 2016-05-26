@@ -1,11 +1,11 @@
-(module LQW15A_80_Hand (layer F.Cu)
+(module Choke_LQW15A_80_Hand (layer F.Cu)
   (descr "Inductor SMD LQW15A_80, Size 0402/1005, Hand soldering")
   (tags "inductor LQW15A_80 0402/1005 hand")
   (attr smd)
   (fp_text reference REF** (at 0 -1.213) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value LQW15A_80_Hand (at 0 0) (layer F.Fab)
+  (fp_text value Choke_LQW15A_80_Hand (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (pad 1 smd rect (at -0.59375 0) (size 0.5875 0.726) (layers F.Cu F.Paste F.Mask))
@@ -16,7 +16,7 @@
   (fp_line (start -1.05 0.55) (end 1.05 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.05 -0.55) (end -1.05 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.05 -0.55) (end 1.05 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/LQW15C_10.wrl
+  (model Inductors_SMD.3dshapes/Choke_LQW15C_10.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

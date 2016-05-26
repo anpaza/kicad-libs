@@ -1,11 +1,11 @@
-(module LQM18F_Flow (layer F.Cu)
+(module Choke_LQM18F_Flow (layer F.Cu)
   (descr "Inductor SMD LQM18F, Size 0603/1608, Flow soldering")
   (tags "inductor LQM18F 0603/1608 flow")
   (attr smd)
   (fp_text reference REF** (at 0 -1.25) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value LQM18F_Flow (at 0 0) (layer F.Fab)
+  (fp_text value Choke_LQM18F_Flow (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (pad 1 smd rect (at -0.775 0) (size 0.85 0.7) (layers F.Cu F.Paste F.Mask))
@@ -16,7 +16,7 @@
   (fp_line (start -1.35 0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.35 -0.55) (end -1.35 0.55) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.35 -0.55) (end 1.35 0.55) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/LQM18F.wrl
+  (model Inductors_SMD.3dshapes/Choke_LQM18F.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

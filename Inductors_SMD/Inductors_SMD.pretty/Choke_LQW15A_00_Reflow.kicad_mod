@@ -1,11 +1,11 @@
-(module LQW15A_00_Reflow (layer F.Cu)
+(module Choke_LQW15A_00_Reflow (layer F.Cu)
   (descr "Inductor SMD LQW15A_00, Size 0402/1005, Reflow soldering")
   (tags "inductor LQW15A_00 0402/1005 reflow")
   (attr smd)
   (fp_text reference REF** (at 0 -1.175) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value LQW15A_00_Reflow (at 0 0) (layer F.Fab)
+  (fp_text value Choke_LQW15A_00_Reflow (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (pad 1 smd rect (at -0.425 0) (size 0.35 0.65) (layers F.Cu F.Paste F.Mask))
@@ -16,7 +16,7 @@
   (fp_line (start -0.75 0.5) (end 0.75 0.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.75 -0.5) (end -0.75 0.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.75 -0.5) (end 0.75 0.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/LQW15C_00.wrl
+  (model Inductors_SMD.3dshapes/Choke_LQW15C_00.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

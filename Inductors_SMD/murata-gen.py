@@ -327,7 +327,7 @@ def round005 (x):
 
 
 def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
-    compn = "%s_%s" % (dim, mod)
+    compn = "Choke_%s_%s" % (dim, mod)
     fn = "%s/%s.kicad_mod" % (dirmod, compn)
 
     print ("Generating inductor %s" % compn)
@@ -442,7 +442,7 @@ def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
     f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
         (round005 (+l2), round005 (-w2), round005 (+l2), round005 (+w2)))
 
-    fn3d = "%s/%s.wrl" % (dir3d, ind ['3dshape'] if ind.has_key ('3dshape') else dim)
+    fn3d = "%s/Choke_%s.wrl" % (dir3d, ind ['3dshape'] if ind.has_key ('3dshape') else dim)
     f.write ("""\
   (model %s
     (at (xyz 0 0 0))

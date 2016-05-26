@@ -1,11 +1,11 @@
-(module LQW2BH_Hand (layer F.Cu)
+(module Choke_LQW2BH_Hand (layer F.Cu)
   (descr "Inductor SMD LQW2BH, Size 0805/2015, Hand soldering")
   (tags "inductor LQW2BH 0805/2015 hand")
   (attr smd)
   (fp_text reference REF** (at 0 -1.7) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value LQW2BH_Hand (at 0 0) (layer F.Fab)
+  (fp_text value Choke_LQW2BH_Hand (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (pad 1 smd rect (at -1.1375 0) (size 1.475 1.32) (layers F.Cu F.Paste F.Mask))
@@ -16,7 +16,7 @@
   (fp_line (start -2.15 1) (end 2.15 1) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.15 -1) (end -2.15 1) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.15 -1) (end 2.15 1) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/LQW2BH.wrl
+  (model Inductors_SMD.3dshapes/Choke_LQW2BH.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

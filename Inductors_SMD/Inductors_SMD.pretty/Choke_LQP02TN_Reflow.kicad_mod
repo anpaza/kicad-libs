@@ -1,11 +1,11 @@
-(module LQP02TN_Reflow (layer F.Cu)
+(module Choke_LQP02TN_Reflow (layer F.Cu)
   (descr "Inductor SMD LQP02TN, Size 01005/0402, Reflow soldering")
   (tags "inductor LQP02TN 01005/0402 reflow")
   (attr smd)
   (fp_text reference REF** (at 0 -0.95) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value LQP02TN_Reflow (at 0 0) (layer F.Fab)
+  (fp_text value Choke_LQP02TN_Reflow (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (pad 1 smd rect (at -0.14 0) (size 0.12 0.2) (layers F.Cu F.Paste F.Mask))
@@ -20,7 +20,7 @@
   (fp_line (start -0.35 0.25) (end 0.35 0.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -0.35 -0.25) (end -0.35 0.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 0.35 -0.25) (end 0.35 0.25) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/LQP02TN.wrl
+  (model Inductors_SMD.3dshapes/Choke_LQP02TN.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

@@ -1,11 +1,11 @@
-(module LQH32M_Reflow (layer F.Cu)
+(module Choke_LQH32M_Reflow (layer F.Cu)
   (descr "Inductor SMD LQH32M, Size 1210/3225, Reflow soldering")
   (tags "inductor LQH32M 1210/3225 reflow")
   (attr smd)
   (fp_text reference REF** (at 0 -2.2) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value LQH32M_Reflow (at 0 0) (layer F.Fab)
+  (fp_text value Choke_LQH32M_Reflow (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (pad 1 smd rect (at -1.15 0) (size 1 2) (layers F.Cu F.Paste F.Mask))
@@ -22,7 +22,7 @@
   (fp_line (start -3 1.5) (end 3 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3 -1.5) (end -3 1.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3 -1.5) (end 3 1.5) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/LQH32M.wrl
+  (model Inductors_SMD.3dshapes/Choke_LQH32M.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

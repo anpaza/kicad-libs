@@ -1,4 +1,4 @@
-(module DR125 (layer F.Cu) (tedit 57407371)
+(module Choke_DR125 (layer F.Cu) (tedit 57407371)
   (descr "Surface Mount Shielded Power Inductor Package DR125")
   (tags "Surface Mount Inductor")
   (attr smd)
@@ -31,7 +31,7 @@
   (fp_line (start -6.25 6.25) (end -6.25 -6.25) (layer F.SilkS) (width 0.15))
   (pad 1 smd rect (at -4.975 0 90) (size 5.5 3.2) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 4.975 0 90) (size 5.5 3.2) (layers F.Cu F.Paste F.Mask))
-  (model Inductors_SMD.3dshapes/DR125.wrl
+  (model Inductors_SMD.3dshapes/Choke_DR125.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

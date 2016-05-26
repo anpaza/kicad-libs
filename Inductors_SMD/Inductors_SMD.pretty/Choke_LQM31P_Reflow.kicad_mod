@@ -1,11 +1,11 @@
-(module LQM31P_Reflow (layer F.Cu)
+(module Choke_LQM31P_Reflow (layer F.Cu)
   (descr "Inductor SMD LQM31P, Size 1206/3216, Reflow soldering")
   (tags "inductor LQM31P 1206/3216 reflow")
   (attr smd)
   (fp_text reference REF** (at 0 -1.75) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value LQM31P_Reflow (at 0 0) (layer F.Fab)
+  (fp_text value Choke_LQM31P_Reflow (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (pad 1 smd rect (at -1.675 0) (size 1.35 1.2) (layers F.Cu F.Paste F.Mask))
@@ -20,7 +20,7 @@
   (fp_line (start -2.6 1.05) (end 2.6 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.6 -1.05) (end -2.6 1.05) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.6 -1.05) (end 2.6 1.05) (layer F.CrtYd) (width 0.05))
-  (model Inductors_SMD.3dshapes/LQM31P.wrl
+  (model Inductors_SMD.3dshapes/Choke_LQM31P.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
