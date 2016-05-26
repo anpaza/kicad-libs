@@ -310,8 +310,6 @@ murata_rf_inductors = {
         },
 }
 
-PMOFS = 0.3 / 2
-
 import os, time, math
 from shutil import copyfile
 from glob import glob
@@ -338,6 +336,8 @@ def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
     clearance = 0.15 if ind ['W'] < 1.0 else 0.25
     # Use thin lines for outline of very small components
     linew = 0.1 if ind ['W'] < 1.0 else 0.15
+    # Silk clearance from pads
+    silkc = round005 (linew / 2)
 
     f.write ("(module %s (layer F.Cu)\n" % (compn))
 
@@ -350,7 +350,10 @@ def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
 
     f.write ("  (attr smd)\n")
 
-    refy = (ind ['W'] if ind ['W'] > pads ['c'] else pads ['c']) / 2 + clearance + 0.2 + 1.0/2
+    refy = ind ['W'] if ind ['W'] > pads ['c'] else pads ['c']
+    if pads.has_key ('d') and pads ['d'] > refy:
+        refy = pads ['d']
+    refy = refy / 2 + clearance + 0.2 + 1.0/2
     f.write ("""\
   (fp_text reference REF** (at 0 %g) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -359,10 +362,10 @@ def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
 
     # I opt for value at (0,0) since this is handy when printing the Fab layer
     f.write ("""\
-  (fp_text value %s (at 0 0) (layer F.Fab)
+  (fp_text value %s (at 0 %g) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-""" % (compn))
+""" % (compn, +refy))
 
     # --- === Pads === --- #
 
@@ -372,11 +375,11 @@ def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
         # pads partialy covered with mask
         f.write ("  (pad 1 smd rect (at %g 0) (size %g %g) (layers F.Cu))\n" % \
             (-px, pl, pads ['d']))
-        f.write ("  (pad 1 smd rect (at %g 0) (size %g %g) (layers F.Mask F.Paste))\n" % \
+        f.write ("  (pad \"\" smd rect (at %g 0) (size %g %g) (layers F.Mask F.Paste))\n" % \
             (-px, pl, pads ['c']))
         f.write ("  (pad 2 smd rect (at %g 0) (size %g %g) (layers F.Cu))\n" % \
             (+px, pl, pads ['d']))
-        f.write ("  (pad 2 smd rect (at %g 0) (size %g %g) (layers F.Mask F.Paste))\n" % \
+        f.write ("  (pad \"\" smd rect (at %g 0) (size %g %g) (layers F.Mask F.Paste))\n" % \
             (+px, pl, pads ['c']))
     else:
         f.write ("  (pad 1 smd rect (at %g 0) (size %g %g) (layers F.Cu F.Paste F.Mask))\n" % \
@@ -393,15 +396,29 @@ def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
         f.write ("  (pad 2 smd rect (at %g 0) (size %g %g) (layers F.Cu F.Paste F.Mask))\n" % \
             (+px, pl, pads ['C']))
 
-    # Body outline
+    # Body outline on F.Fab
     l2 = ind ['L'] / 2
     w2 = ind ['W'] / 2
-    ph2 = pads ['c'] / 2 + PMOFS
-    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width %.2f))\n" % \
+    ph2 = pads ['c'] / 2 + silkc
+    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.Fab) (width %.2f))\n" % \
         (-l2, -w2, +l2, -w2, linew))
-    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width %.2f))\n" % \
+    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.Fab) (width %.2f))\n" % \
         (-l2, +w2, +l2, +w2, linew))
+    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.Fab) (width %.2f))\n" % \
+        (-l2, -w2, -l2, +w2, linew))
+    f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.Fab) (width %.2f))\n" % \
+        (+l2, -w2, +l2, +w2, linew))
+
+    # Body outline on F.SilkS
+    xl = pads ['b'] / 2 + silkc
+    xr = pads ['a'] / 2 - silkc
+
     if w2 > ph2:
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width %.2f))\n" % \
+            (-l2, -w2, +l2, -w2, linew))
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width %.2f))\n" % \
+            (-l2, +w2, +l2, +w2, linew))
+
         f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width %.2f))\n" % \
             (-l2, -w2, -l2, -ph2, linew))
         f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width %.2f))\n" % \
@@ -410,14 +427,18 @@ def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
             (+l2, -w2, +l2, -ph2, linew))
         f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width %.2f))\n" % \
             (+l2, +ph2, +l2, +w2, linew))
+    else:
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width %.2f))\n" % \
+            (-xr, -w2, +xr, -w2, linew))
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width %.2f))\n" % \
+            (-xr, +w2, +xr, +w2, linew))
 
     # Draw polarity mark
     if ind.has_key ('Pol') and ind ['Pol']:
-        xl = pads ['b'] / 2 + PMOFS
-        xr = pads ['a'] / 2 - PMOFS
-
         # Vertical line along the right margin of the left pad
         f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.SilkS) (width %.2f))\n" % \
+            (-xr, -ph2, -xr, +ph2, linew))
+        f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.Fab) (width %.2f))\n" % \
             (-xr, -w2, -xr, +w2, linew))
 
         # Two lines along the top and bottom margins
@@ -432,7 +453,10 @@ def _GenerateInductor (dirmod, dir3d, dim, mod, ind, pads):
 
     # Courtyard
     l2 = (pads ['B'] if pads.has_key ('B') else pads ['b']) / 2 + clearance
-    w2 = (ind ['W'] if ind ['W'] > pads ['c'] else pads ['c']) / 2 + clearance
+    w2 = ind ['W'] if ind ['W'] > pads ['c'] else pads ['c']
+    if pads.has_key ('d') and pads ['d'] > w2:
+        w2 = pads ['d']
+    w2 = w2 / 2 + clearance
     f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
         (round005 (-l2), round005 (-w2), round005 (+l2), round005 (-w2)))
     f.write ("  (fp_line (start %g %g) (end %g %g) (layer F.CrtYd) (width 0.05))\n" % \
