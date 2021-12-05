@@ -40,14 +40,14 @@ def save_bmesh(fw, bm, materials):
         if m is None:
             continue
         fw('\t\t\t# Material %r\n' % materialid(m.name))
-        fw("\t\t\tdiffuseColor %.3g %.3g %.3g\n" % m.diffuse_color[:])
-        emissive_color = list (m.diffuse_color[:])
-        for x in range (len (emissive_color)):
-            emissive_color [x] *= m.emit
-        fw("\t\t\temissiveColor %.3g %.3g %.3g\n" % tuple (emissive_color))
+        fw("\t\t\tdiffuseColor %.3g %.3g %.3g %.3g\n" % m.diffuse_color[:])
+        # emissive_color = list (m.diffuse_color[:])
+        # for x in range (len (emissive_color)):
+        #     emissive_color [x] *= m.emit
+        # fw("\t\t\temissiveColor %.3g %.3g %.3g\n" % tuple (emissive_color))
         fw("\t\t\tspecularColor %.3g %.3g %.3g\n" % m.specular_color[:])
-        fw("\t\t\tambientIntensity %.3g\n" % m.ambient)
-        fw("\t\t\ttransparency %.3g\n" % (1-m.alpha))
+        #fw("\t\t\tambientIntensity %.3g\n" % m.ambient)
+        #fw("\t\t\ttransparency %.3g\n" % (1-m.alpha))
         fw("\t\t\tshininess %.3g\n" % m.specular_intensity)
         break
 
@@ -99,7 +99,8 @@ def save_object(fw, global_matrix,
         if is_editmode:
             bpy.ops.object.editmode_toggle()
 
-        me = obj.to_mesh(scene, True, 'PREVIEW', calc_tessface=False)
+        #me = obj.to_mesh(scene, True, 'PREVIEW', calc_tessface=False)
+        me = obj.to_mesh()
         bm = bmesh.new()
         bm.from_mesh(me)
 
@@ -117,7 +118,7 @@ def save_object(fw, global_matrix,
     # Blender 2.74 fails triangulation if we do it after transform.
     # If we do it before, it's ok.
     bmesh.ops.triangulate(bm, faces=bm.faces)
-    bm.transform(global_matrix * obj.matrix_world)
+    bm.transform(global_matrix @ obj.matrix_world)
 
     save_bmesh(fw, bm, me.materials)
 
@@ -130,7 +131,7 @@ def vrmlid(n):
 def materialid(n):
     """ Transform a material name for VRML compatibility, but no leading '_', we might reimport wrl and keep material names."""
     return n.replace ('.', '_').replace (' ','-')
-    
+
 def save(operator,
          context,
          filepath="",
@@ -151,7 +152,7 @@ def save(operator,
         top = None
         toploc = None
         for obj in objects:
-            if (obj.type != 'MESH') or obj.hide:
+            if (obj.type != 'MESH') or obj.hide_viewport:
                 continue
 
             cur = obj
@@ -177,7 +178,7 @@ and are part of different hierarchies.
                 return {'CANCELLED'}
 
         if not (top is None):
-            global_matrix *= mathutils.Matrix.Translation (-toploc)
+            global_matrix @= mathutils.Matrix.Translation (-toploc)
 
     file = open(filepath, 'w', encoding='utf-8')
     fw = file.write
@@ -185,7 +186,7 @@ and are part of different hierarchies.
     fw('#modeled using blender3d http://blender.org\n')
 
     for obj in objects:
-        if (obj.type != 'MESH') or obj.hide:
+        if (obj.type != 'MESH') or obj.hide_viewport:
             continue
 
         fw("\n# %r\nDEF %s Transform {\nchildren [\n" % (obj.name, vrmlid (obj.name)))
