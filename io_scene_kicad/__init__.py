@@ -22,8 +22,8 @@ bl_info = {
     "name": "KiCadVRML2 (KiCad's idea of VRML2, terribly broken loader)",
     "author": "made by Campbell Barton, broken by Andrey Zabolotnyi",
     "version": (0, 1),
-    "blender": (2, 74, 0),
-    "location": "File > Export",
+    "blender": (2, 80, 0),
+    "location": "File > Import-Export",
     "description": "Exports mesh objects to VRML2 for KiCad",
     "warning": "",
     "support": 'COMMUNITY',
@@ -48,16 +48,14 @@ from bpy.props import (CollectionProperty,
                        PointerProperty,
                        )
 from bpy_extras.io_utils import (ExportHelper,
-                                 orientation_helper_factory,
+                                 orientation_helper,
                                  path_reference_mode,
                                  axis_conversion,
                                  )
 
 
-ExportKiCadVRMLOrientationHelper = orientation_helper_factory("ExportKiCadVRMLOrientationHelper", axis_forward='Y', axis_up='Z')
-
-
-class ExportKiCadVRMLPrefs(PropertyGroup, ExportKiCadVRMLOrientationHelper):
+@orientation_helper(axis_forward='Y', axis_up='Z')
+class ExportKiCadVRMLPrefs(PropertyGroup):
 
     use_selection = BoolProperty(
             name="Selection Only",
@@ -107,7 +105,7 @@ class ExportKiCadVRML(Operator, ExportHelper):
 
         global_matrix = axis_conversion(to_forward=prefs.axis_forward,
                                         to_up=prefs.axis_up,
-                                        ).to_4x4() * Matrix.Scale(prefs.global_scale, 4)
+                                        ).to_4x4() @ Matrix.Scale(prefs.global_scale, 4)
         keywords["global_matrix"] = global_matrix
 
         return export_kicad.save(self, context, **keywords)
@@ -133,18 +131,21 @@ def menu_func_export(self, context):
 
 
 def register():
-    #bpy.utils.register_class(ExportKiCadVRML)
-    bpy.utils.register_module(__name__)
+    bpy.utils.register_class(ExportKiCadVRMLPrefs)
+    bpy.utils.register_class(ExportKiCadVRML)
+    #bpy.utils.register_module(__name__)
 
     bpy.types.Scene.export_kicad_vrml_prefs = PointerProperty (type = ExportKiCadVRMLPrefs)
 
-    bpy.types.INFO_MT_file_export.append(menu_func_export)
+    bpy.types.TOPBAR_MT_file_export.append(menu_func_export)
 
 
 def unregister():
-    bpy.types.INFO_MT_file_export.remove(menu_func_export)
+    bpy.types.TOPBAR_MT_file_export.remove(menu_func_export)
 
+    bpy.utils.unregister_class(ExportKiCadVRMLPrefs)
     bpy.utils.unregister_class(ExportKiCadVRML)
 
 if __name__ == "__main__":
     register()
+
